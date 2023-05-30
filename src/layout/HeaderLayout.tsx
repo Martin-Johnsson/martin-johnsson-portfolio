@@ -14,22 +14,23 @@ const HeaderLayout = () => {
   return (
     <header>
       <Menu>
-        <Flex justifyContent='space-evenly' mt='2.5vh'>
-          <Box>
-            <StyledNavLink to='/'>
-              <StyledHeaderMenuItem>
-                <HeaderName>MARTIN JOHNSSON</HeaderName>
-              </StyledHeaderMenuItem>
-            </StyledNavLink>
+        <Flex>
+          <Box
+            onClick={() => {
+              navigate('/');
+            }}
+            cursor='pointer'
+          >
+            <HeaderName>MARTIN JOHNSSON</HeaderName>
           </Box>
-          <Box>
+          <Box marginLeft='10vw'>
             <StyledNavLink to='/portfolio'>
               <StyledHeaderMenuItem>
                 <HeaderName>Portfolio</HeaderName>
               </StyledHeaderMenuItem>
             </StyledNavLink>
           </Box>
-          <Box>
+          <Box marginLeft='10vw'>
             <StyledNavLink to='/test1'>
               <StyledHeaderMenuItem>
                 <HeaderName>Contact</HeaderName>

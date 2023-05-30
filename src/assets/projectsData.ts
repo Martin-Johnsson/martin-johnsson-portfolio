@@ -1,9 +1,11 @@
 import { IProjectsData } from '../types/interfaces';
+
 export const projects: IProjectsData[] = [
   {
-    image: '../../public/images/test.png',
+    image: '/public/images/test.png',
     name: 'Insights',
-    about: 'About Insights',
+    about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dignissimos eaque deserunt libero cum perferendis assumenda ab repellat dolorem voluptas, eius, iusto perspiciatis consequuntur. Minima nulla voluptas quis ea ipsa!
+    Autem, labore earum aspernatur in numquam neque illum libero, maxime, sed nam minus odit vitae doloremque! In id quidem rem, beatae optio ipsa eligendi eius quod assumenda exceptu`,
     description: 'Description test',
     tags: [
       'TypeScript',
@@ -31,7 +33,7 @@ export const projects: IProjectsData[] = [
     ],
   },
   {
-    image: '../../public/images/test.png',
+    image: '/public/images/test.png',
     name: 'E-wallet',
     about: 'About Ewallet',
     description: 'Description test',
@@ -46,7 +48,7 @@ export const projects: IProjectsData[] = [
     ],
   },
   {
-    image: '../../public/images/test.png',
+    image: '/public/images/test.png',
     name: 'Times',
     about: 'About test',
     description: 'Description test',
@@ -61,7 +63,7 @@ export const projects: IProjectsData[] = [
     ],
   },
   {
-    image: '../../public/images/test.png',
+    image: '/public/images/test.png',
     name: 'Times',
     about: 'About test',
     description: 'Description test',

@@ -10,8 +10,7 @@ const BaseLayout = () => {
         templateAreas={`"header"
                   "main"
                   `}
-        gridTemplateRows='2vw'
-        gridTemplateColumns=''
+        gridTemplateColumns='100vw'
       >
         <GridItem
           bg='#242424'
@@ -19,12 +18,11 @@ const BaseLayout = () => {
           position='fixed'
           zIndex='1'
           width='100vw'
-          height='10.5vh'
         >
           <HeaderLayout />
         </GridItem>
 
-        <GridItem className='main' area='main' bg='#231F20'>
+        <GridItem className='main' area='main' bg='#242424' minHeight='95vh'>
           <Outlet />
         </GridItem>
       </Grid>

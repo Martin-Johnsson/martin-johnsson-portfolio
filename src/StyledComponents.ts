@@ -7,8 +7,6 @@ export const PortfolioHomeContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  width: 100vw;
   text-align: center;
   top: 20vh;
   left: 50vw;
@@ -16,7 +14,7 @@ export const PortfolioHomeContainer = styled.section`
 `;
 
 export const BigHeading = styled.h1`
-  font-size: 2vw;
+  font-size: 3vw;
   display: block;
   margin: 1vw;
   font-weight: 800;
@@ -25,8 +23,7 @@ export const BigHeading = styled.h1`
 `;
 
 export const MediumHeading = styled.h2`
-  font-size: 2vw;
-
+  font-size: 3vw;
   display: block;
   margin: 1vw;
   font-weight: 800;
@@ -35,7 +32,7 @@ export const MediumHeading = styled.h2`
 `;
 
 export const ThirdSizeHeading = styled.h3`
-  font-size: 2vw;
+  font-size: 3vw;
   display: block;
   margin: 1vw;
   font-weight: 600;
@@ -49,7 +46,7 @@ export const ThirdSizeHeading = styled.h3`
 `;
 
 export const BodyText = styled.h3`
-  font-size: 1vw;
+  font-size: 1.5vw;
   display: block;
   margin: 1vw;
   font-weight: 600;
@@ -63,9 +60,8 @@ export const ToProjectsButton = styled.button`
   border: 0.2vw solid #ffffff;
   text-align: center;
   margin-top: 10vh;
-  padding: 7vh 9vw 7vh 9vw;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 8vh 4vw;
+  font-size: 3vw;
   font-weight: 800;
   &:hover {
     background-color: purple;
@@ -88,14 +84,37 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const HeaderName = styled.h1`
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 800;
   color: #ffff;
 `;
 
 export const ContactSection = styled.section`
   text-align: center;
-  border: 0.2vw solid white;
-  width: 90vw;
+  border: 1px solid black;
   height: 100vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100vw;
+`;
+
+export const FormHeading = styled.h1`
+  font-size: 3vw;
+  display: block;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  font-weight: 800;
+  color: #ffff;
+`;
+
+export const ModalHeading = styled.h1`
+  font-size: 3vw;
+  font-weight: 800;
+  color: #ffff;
+`;
+
+export const ModalText = styled.span`
+  font-size: 1.5vw;
+  font-weight: 300;
+  color: #ffff;
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BigHeading, ContactSection } from '../StyledComponents';
+import { BigHeading, ContactSection, FormHeading } from '../StyledComponents';
 import { Box, Flex } from '@chakra-ui/react';
 import { Form, Field } from 'react-final-form';
 
@@ -11,13 +11,13 @@ const Contact = () => {
   return (
     <ContactSection>
       <Box>
-        <BigHeading>Contact</BigHeading>
+        <FormHeading>Contact</FormHeading>
         <Form
           onSubmit={onSubmit}
           render={({ handleSubmit }) => (
             <form>
-              <Flex direction='column' gap='10vh' w='100vw'>
-                <Box w='100vw'>
+              <Flex direction='column' gap='6vh' className='text-center'>
+                <Box>
                   <label htmlFor='name' />
                   <Field
                     name='name'
@@ -27,17 +27,8 @@ const Contact = () => {
                     required='true'
                   ></Field>
                 </Box>
-                <Box w='100vw'>
-                  <label htmlFor='title' />
-                  <Field
-                    name='title'
-                    component='input'
-                    type='text'
-                    placeholder='Title'
-                    required='true'
-                  ></Field>
-                </Box>
-                <Box w='100vw'>
+
+                <Box>
                   <label htmlFor='Test' />
                   <Field
                     name='email'
@@ -47,18 +38,27 @@ const Contact = () => {
                     required='true'
                   ></Field>
                 </Box>
-                <Box w='100vw' resize='vertical'>
+                <Box>
+                  <label htmlFor='title' />
+                  <Field
+                    name='title'
+                    component='input'
+                    type='text'
+                    placeholder='Title'
+                    required='true'
+                  ></Field>
+                </Box>
+                <Box resize='vertical'>
                   <label htmlFor='userInput' />
                   <Field
                     name='name'
                     component='textarea'
                     type='text'
                     placeholder='What´s on your mind?'
-                    style={{ width: '50vw', height: '30vh' }}
+                    style={{ width: '70vw', height: '30vh' }}
                     required='true'
                   ></Field>
                 </Box>
-
                 <button>SUBMIT</button>
               </Flex>
             </form>

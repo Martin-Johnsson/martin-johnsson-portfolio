@@ -15,7 +15,7 @@ const Splash = () => {
   };
   return (
     <>
-      <Box bg='#242424' h='100vh'>
+      <Box bg='#242424' minHeight='100vh' display='flex' alignItems='center'>
         <PortfolioHomeContainer>
           <BigHeading>HI, MY NAME IS MARTIN JOHNSSON</BigHeading>
           <MediumHeading>
@@ -24,9 +24,11 @@ const Splash = () => {
           <ThirdSizeHeading onClick={handleOnHeadingClick}>
             HIT ME UP!
           </ThirdSizeHeading>
-          <ToProjectsButton onClick={handleOnHeadingClick}>
-            View my projects
-          </ToProjectsButton>
+          <Box>
+            <ToProjectsButton onClick={handleOnHeadingClick}>
+              View my projects
+            </ToProjectsButton>
+          </Box>
         </PortfolioHomeContainer>
       </Box>
     </>
