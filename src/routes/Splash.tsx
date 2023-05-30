@@ -5,11 +5,15 @@ import {
   PortfolioHomeContainer,
   ThirdSizeHeading,
   ToProjectsButton,
-} from '../StyledComponents.ts';
+} from '../styles/StyledComponents.ts';
 import { Box } from '@chakra-ui/react';
 const Splash = () => {
   const navigate = useNavigate();
   const handleOnHeadingClick = () => {
+    console.log('hello');
+    return navigate('/contact');
+  };
+  const handleOnToProjectsClick = () => {
     console.log('hello');
     return navigate('/portfolio');
   };
@@ -17,15 +21,16 @@ const Splash = () => {
     <>
       <Box bg='#242424' minHeight='100vh' display='flex' alignItems='center'>
         <PortfolioHomeContainer>
-          <BigHeading>HI, MY NAME IS MARTIN JOHNSSON</BigHeading>
+          <BigHeading>HELLO THERE!</BigHeading>
+          <MediumHeading>My name is Martin Johnsson</MediumHeading>
           <MediumHeading>
-            I'M A WEB DEVELOPER BASED IN LUND, SWEDEN
+            I'm a web developer based in Lund, Sweden
           </MediumHeading>
           <ThirdSizeHeading onClick={handleOnHeadingClick}>
-            HIT ME UP!
+            Hit me up!
           </ThirdSizeHeading>
           <Box>
-            <ToProjectsButton onClick={handleOnHeadingClick}>
+            <ToProjectsButton onClick={handleOnToProjectsClick}>
               View my projects
             </ToProjectsButton>
           </Box>

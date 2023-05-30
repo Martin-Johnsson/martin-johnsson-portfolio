@@ -1,62 +1,84 @@
-import { BodyText, ModalHeading, ModalText } from '../StyledComponents';
+import {
+  BodyText,
+  ModalHeading,
+  ModalText,
+  ModalSecondHeading,
+} from '../styles/StyledComponents';
 import { projects } from '../assets/projectsData';
 import { RootState } from '../redux/store';
 import {
   Box,
   Flex,
   Img,
+  Link,
   Modal,
   ModalContent,
   ModalFooter,
   ModalOverlay,
 } from '@chakra-ui/react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
+
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectsModal = ({ modalIsOpen, closeModal }) => {
   const dispatch = useDispatch();
   const projectsState = useSelector((state: RootState) => state.projects);
 
   const selectedProject = projects[projectsState.selectedProject];
-
+  const navigate = useNavigate();
   return (
     <>
       <Modal
         isOpen={modalIsOpen}
-        onClose={modalIsOpen}
+        onClose={closeModal}
         size='l'
-        closeOnOverlayClick
+        closeOnOverlayClick={true}
       >
-        <ModalOverlay
-          onClick={() => {
-            dispatch({ type: 'projects/setModalIsOpen', payload: false });
-          }}
-        >
+        <ModalOverlay>
           <ModalContent bg='#242424' w='60vw' h='80vh'>
             <Box textAlign='center'>
               <ModalHeading>{selectedProject.name}</ModalHeading>
             </Box>
             <Flex direction='row' marginTop='3vh'>
-              <Box w='50vw'>
+              <Box w='50vw' marginLeft='3vw' borderRight='0.5vw solid #15181a'>
                 <Img
                   src={selectedProject.image}
                   alt='Screenshot of Insights application'
                 />
               </Box>
               <Box w='60vw'>
-                <ModalHeading>About</ModalHeading>
+                <ModalSecondHeading>About</ModalSecondHeading>
 
                 <ModalText>{selectedProject.about}</ModalText>
               </Box>
             </Flex>
-
-            <button
-              onClick={() => {
-                dispatch({ type: 'projects/setModalIsOpen', payload: false });
-              }}
-            >
-              test
-            </button>
+            <Flex direction='column'>
+              <Box color='white' alignSelf='center'>
+                {selectedProject.links && (
+                  <Box>
+                    <Link
+                      href={selectedProject.links.github}
+                      isExternal
+                      fontSize='1.5vw'
+                    >
+                      <i className='fa-solid fa-code'></i>
+                    </Link>
+                  </Box>
+                )}
+                {!selectedProject.links.github && (
+                  <Flex direction='row' gap='0.2vw '>
+                    <Box>
+                      <i className='fa-solid fa-xmark'></i>
+                    </Box>
+                    <Box>NDA Protected</Box>
+                  </Flex>
+                )}
+              </Box>
+            </Flex>
           </ModalContent>
         </ModalOverlay>
       </Modal>

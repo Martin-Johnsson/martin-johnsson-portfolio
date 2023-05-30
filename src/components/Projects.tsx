@@ -1,4 +1,8 @@
-import { BigHeading, BodyText } from '../StyledComponents';
+import {
+  BigHeading,
+  BodyText,
+  SmallBodyText,
+} from '../styles/StyledComponents';
 import { projects } from '../assets/projectsData';
 import { Box, Flex, Img, Wrap, WrapItem } from '@chakra-ui/react';
 import React, { useState } from 'react';
@@ -21,7 +25,13 @@ const Projects = () => {
 
   return (
     <>
-      <Wrap justify='center' spacing='10vh' align='center'>
+      <Wrap
+        justify='center'
+        spacing='10vh'
+        align='center'
+        marginBottom='2vh'
+        marginTop='6vh'
+      >
         <Box textAlign='center'>
           <BigHeading>Projects</BigHeading>
         </Box>
@@ -39,21 +49,23 @@ const Projects = () => {
               <Flex direction='column' alignItems={'center'}>
                 <Box alignSelf='center'>
                   <BodyText>{element.name}</BodyText>
-                  <Box marginRight='1vw'>
+                  <SmallBodyText>{element.description}</SmallBodyText>
+                  <Flex marginRight='1vw' flexWrap='wrap'>
                     {element.tags.map((tag) => {
                       return (
                         <Box
-                          border='0.1vw solid lightBlue'
+                          flexBasis='1.5vw'
+                          border='0.2vw solid #0b3d54'
                           color='white'
                           marginLeft='0.6vw'
                           display='inline-block'
-                          padding='0.5vw'
+                          padding='0.2vw'
                         >
                           {tag}
                         </Box>
                       );
                     })}
-                  </Box>
+                  </Flex>
                 </Box>
                 <Box
                   justifyContent='center'

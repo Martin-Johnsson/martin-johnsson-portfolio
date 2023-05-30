@@ -6,7 +6,7 @@ import {
   StyledNavLink,
   BigHeading,
   HeaderName,
-} from '../StyledComponents';
+} from '../styles/StyledComponents';
 
 const HeaderLayout = () => {
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ const HeaderLayout = () => {
               navigate('/');
             }}
             cursor='pointer'
+            marginLeft='2vw'
           >
             <HeaderName>MARTIN JOHNSSON</HeaderName>
           </Box>
@@ -31,7 +32,7 @@ const HeaderLayout = () => {
             </StyledNavLink>
           </Box>
           <Box marginLeft='10vw'>
-            <StyledNavLink to='/test1'>
+            <StyledNavLink to='/contact'>
               <StyledHeaderMenuItem>
                 <HeaderName>Contact</HeaderName>
               </StyledHeaderMenuItem>

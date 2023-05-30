@@ -1,5 +1,9 @@
 import React from 'react';
-import { BigHeading, ContactSection, FormHeading } from '../StyledComponents';
+import {
+  BigHeading,
+  ContactSection,
+  FormHeading,
+} from '../styles/StyledComponents';
 import { Box, Flex } from '@chakra-ui/react';
 import { Form, Field } from 'react-final-form';
 
@@ -34,7 +38,7 @@ const Contact = () => {
                     name='email'
                     component='input'
                     type='email'
-                    placeholder='Your Email'
+                    placeholder='john.doe@gmail.com'
                     required='true'
                   ></Field>
                 </Box>
@@ -59,7 +63,9 @@ const Contact = () => {
                     required='true'
                   ></Field>
                 </Box>
-                <button>SUBMIT</button>
+                <Box bg='white'>
+                  <button>SUBMIT</button>
+                </Box>
               </Flex>
             </form>
           )}

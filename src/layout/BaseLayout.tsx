@@ -22,7 +22,7 @@ const BaseLayout = () => {
           <HeaderLayout />
         </GridItem>
 
-        <GridItem className='main' area='main' bg='#242424' minHeight='95vh'>
+        <GridItem className='main' area='main' bg='#15181a' minHeight='95vh'>
           <Outlet />
         </GridItem>
       </Grid>

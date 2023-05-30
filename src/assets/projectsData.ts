@@ -2,11 +2,10 @@ import { IProjectsData } from '../types/interfaces';
 
 export const projects: IProjectsData[] = [
   {
-    image: '/public/images/test.png',
+    image: '/public/images/Insights.png',
     name: 'Insights',
-    about: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dignissimos eaque deserunt libero cum perferendis assumenda ab repellat dolorem voluptas, eius, iusto perspiciatis consequuntur. Minima nulla voluptas quis ea ipsa!
-    Autem, labore earum aspernatur in numquam neque illum libero, maxime, sed nam minus odit vitae doloremque! In id quidem rem, beatae optio ipsa eligendi eius quod assumenda exceptu`,
-    description: 'Description test',
+    description: '- Data analysis and management tool',
+    about: `This project was about creating an data analysis and management tool. We were 4 colleagues responsible for the project. Me, another Frontend Devloper and two UX. There were two senior developers reviewing our code.`,
     tags: [
       'TypeScript',
       'React',
@@ -15,66 +14,28 @@ export const projects: IProjectsData[] = [
       'Emotion.js',
       'ChakraUI',
       'date-fns',
+      'React-select',
     ],
   },
   {
-    image: '../../public/images/test.png',
+    image: '../../public/images/Insights.png',
     name: 'Times',
-    about: 'About Times',
-    description: 'Description test',
-    tags: [
-      'TypeScript',
-      'React',
-      'Redux',
-      'Redux Saga',
-      'Emotion.js',
-      'ChakraUI',
-      'date-fns',
-    ],
+    description: '- Time management system',
+    about:
+      'This project was during my first intern period. It was an time management system which I further developed and maintained.',
+
+    tags: ['AngularJS', 'C#', 'ASP.NET Core'],
   },
   {
-    image: '/public/images/test.png',
+    image: '../../public/images/eWallet.png',
     name: 'E-wallet',
-    about: 'About Ewallet',
-    description: 'Description test',
-    tags: [
-      'TypeScript',
-      'React',
-      'Redux',
-      'Redux Saga',
-      'Emotion.js',
-      'ChakraUI',
-      'date-fns',
-    ],
-  },
-  {
-    image: '/public/images/test.png',
-    name: 'Times',
-    about: 'About test',
-    description: 'Description test',
-    tags: [
-      'TypeScript',
-      'React',
-      'Redux',
-      'Redux Saga',
-      'Emotion.js',
-      'ChakraUI',
-      'date-fns',
-    ],
-  },
-  {
-    image: '/public/images/test.png',
-    name: 'Times',
-    about: 'About test',
-    description: 'Description test',
-    tags: [
-      'TypeScript',
-      'React',
-      'Redux',
-      'Redux Saga',
-      'Emotion.js',
-      'ChakraUI',
-      'date-fns',
-    ],
+    description: '- Digital Wallet',
+    about: `This was a project during the course 'JavaScript - React'. The mission was to create an react app that was let the user store, create and delete credit cards.`,
+
+    tags: ['React', 'Redux', 'Emotion.js', 'ChakraUI', 'date-fns'],
+    links: {
+      github: 'https://github.com/Martin-Johnsson/eWalletApp',
+      liveExample: '',
+    },
   },
 ];

@@ -14,7 +14,7 @@ export const PortfolioHomeContainer = styled.section`
 `;
 
 export const BigHeading = styled.h1`
-  font-size: 3vw;
+  font-size: 2vw;
   display: block;
   margin: 1vw;
   font-weight: 800;
@@ -23,32 +23,47 @@ export const BigHeading = styled.h1`
 `;
 
 export const MediumHeading = styled.h2`
-  font-size: 3vw;
+  font-size: 1.7vw;
   display: block;
   margin: 1vw;
-  font-weight: 800;
+  font-weight: 600;
   width: 100vw;
   color: #ffff;
 `;
 
 export const ThirdSizeHeading = styled.h3`
-  font-size: 3vw;
+  font-size: 2vw;
   display: block;
   margin: 1vw;
-  font-weight: 600;
+  font-weight: 800;
   width: 30vw;
   color: #ffff;
-
+  text-decoration: underline;
   &:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: #313031;
   }
 `;
 
 export const BodyText = styled.h3`
   font-size: 1.5vw;
   display: block;
-  margin: 1vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+
+  font-weight: 600;
+  width: 30vw;
+  color: #ffff;
+`;
+
+export const SmallBodyText = styled.h4`
+  font-size: 1vw;
+  display: block;
+  margin-left: 2vw;
+  margin-top: 0.5vh;
+  margin-bottom: 2vw;
+
   font-weight: 600;
   width: 30vw;
   color: #ffff;
@@ -64,8 +79,13 @@ export const ToProjectsButton = styled.button`
   font-size: 3vw;
   font-weight: 800;
   &:hover {
-    background-color: purple;
+    border: 0.2vw solid #15181a;
+    background-color: #313031;
     cursor: pointer;
+  }
+  &:active {
+    background-color: #313031;
+    border: none;
   }
 `;
 
@@ -84,9 +104,12 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const HeaderName = styled.h1`
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 800;
   color: #ffff;
+  &:hover {
+    color: #743a8a;
+  }
 `;
 
 export const ContactSection = styled.section`
@@ -113,8 +136,14 @@ export const ModalHeading = styled.h1`
   color: #ffff;
 `;
 
+export const ModalSecondHeading = styled.h2`
+  font-size: 2vw;
+  font-weight: 800;
+  color: #ffff;
+`;
+
 export const ModalText = styled.span`
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 300;
   color: #ffff;
 `;
