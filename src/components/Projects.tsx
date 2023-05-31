@@ -1,14 +1,15 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { Box, Flex, Img, Wrap, WrapItem } from '@chakra-ui/react';
+
 import {
   BigHeading,
   BodyText,
   SmallBodyText,
 } from '../styles/StyledComponents';
 import { projects } from '../assets/projectsData';
-import { Box, Flex, Img, Wrap, WrapItem } from '@chakra-ui/react';
-import React, { useState } from 'react';
 import ProjectsModal from './ProjectsModal';
-import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
+
 const Projects = () => {
   const dispatch = useDispatch();
 

@@ -1,28 +1,22 @@
 import {
-  BodyText,
-  ModalHeading,
-  ModalText,
-  ModalSecondHeading,
-} from '../styles/StyledComponents';
-import { projects } from '../assets/projectsData';
-import { RootState } from '../redux/store';
-import {
   Box,
   Flex,
   Img,
   Link,
   Modal,
   ModalContent,
-  ModalFooter,
   ModalOverlay,
 } from '@chakra-ui/react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquare } from '@fortawesome/free-solid-svg-icons';
-
-import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+
+import {
+  ModalHeading,
+  ModalText,
+  ModalSecondHeading,
+} from '../styles/StyledComponents';
+import { projects } from '../assets/projectsData';
+import { RootState } from '../redux/store';
 
 const ProjectsModal = ({ modalIsOpen, closeModal }) => {
   const dispatch = useDispatch();

@@ -1,5 +1,6 @@
-import { SmallLinksText } from '../styles/StyledComponents';
 import { Box, Flex, Link } from '@chakra-ui/react';
+
+import { SmallLinksText } from '../styles/StyledComponents';
 
 const Links = () => {
   return (
@@ -29,7 +30,7 @@ const Links = () => {
           href='https://www.linkedin.com/in/martin-ola-andreas-johnsson/'
         >
           <Box
-            backgroundColor='#15181a'
+            backgroundColor='#0073b1'
             height='10vh'
             border='0.1vw solid #ffff'
           >
@@ -40,7 +41,7 @@ const Links = () => {
         </Link>
         <Link download href='/files/Resume, Martin Johnsson.pdf'>
           <Box
-            backgroundColor='#15181a'
+            backgroundColor='#34eb7a'
             height='10vh'
             border='0.1vw solid #ffff'
           >

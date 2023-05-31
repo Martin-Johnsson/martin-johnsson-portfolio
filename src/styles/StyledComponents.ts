@@ -81,6 +81,7 @@ export const ToProjectsButton = styled.button`
   &:hover {
     border: 0.2vw solid #15181a;
     background-color: #313031;
+    color: #743a8a;
     cursor: pointer;
   }
   &:active {
@@ -153,4 +154,24 @@ export const SmallLinksText = styled.span`
   font-weight: 600;
   width: 30vw;
   color: #ffff;
+`;
+
+export const CustomInput = styled.input`
+  background-color: #313031;
+  color: #ffffff;
+  border: 0.2vw solid #ffffff;
+  text-align: center;
+  padding: 2vh 10vw;
+  font-size: 2vw;
+  font-weight: 800;
+  &:hover {
+    border: 0.2vw solid #15181a;
+    background-color: #313031;
+    color: #743a8a;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: #313031;
+    border: none;
+  }
 `;
