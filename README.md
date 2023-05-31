@@ -1,6 +1,6 @@
 ## About
 
-This project was created for showcasing my skills previous experience be able to get in contact with me.
+This project was created for showcasing my skills, previous experience and to be able to get in contact with me all in one place on the web.
 
 ## Tech stack
 
