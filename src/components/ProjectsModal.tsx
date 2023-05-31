@@ -58,23 +58,25 @@ const ProjectsModal = ({ modalIsOpen, closeModal }) => {
             </Flex>
             <Flex direction='column'>
               <Box color='white' alignSelf='center'>
-                {selectedProject.links && (
-                  <Box>
+                {selectedProject.links.github && (
+                  <Box marginTop='2vh' color='#fffff'>
                     <Link
                       href={selectedProject.links.github}
                       isExternal
-                      fontSize='1.5vw'
+                      fontSize='1vw'
                     >
                       <i className='fa-solid fa-code'></i>
+                      <span> Checkout the code!</span>
                     </Link>
                   </Box>
                 )}
                 {!selectedProject.links.github && (
                   <Flex direction='row' gap='0.2vw '>
-                    <Box>
-                      <i className='fa-solid fa-xmark'></i>
+                    <Box marginTop='2vh' color='#fffff' fontSize='1vw'>
+                      <i className='fa-solid fa-code'></i>{' '}
+                      <span>No code available. NDA Protected.</span>
                     </Box>
-                    <Box>NDA Protected</Box>
+                    <Box></Box>
                   </Flex>
                 )}
               </Box>

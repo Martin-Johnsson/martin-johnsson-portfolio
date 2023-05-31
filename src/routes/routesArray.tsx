@@ -3,10 +3,11 @@ import Splash from './Splash';
 import BaseLayout from '../layout/BaseLayout';
 import Portfolio from './Portfolio';
 import Contact from '../components/Contact';
+import Links from '../components/Links';
 
 export const routes = [
   {
-    element: <BaseLayout />,
+    element: [<BaseLayout />],
     children: [
       {
         path: '/',

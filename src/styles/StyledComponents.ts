@@ -92,14 +92,12 @@ export const ToProjectsButton = styled.button`
 export const StyledHeaderMenuItem = styled(MenuItem)`
   background-color: inherit;
   &:hover {
-    text-decoration: underline;
   }
 `;
 
 export const StyledNavLink = styled(NavLink)`
   &.active {
-    color: #ffff;
-    text-decoration: underline;
+    background-color: #743a8a;
   }
 `;
 
@@ -145,5 +143,14 @@ export const ModalSecondHeading = styled.h2`
 export const ModalText = styled.span`
   font-size: 1vw;
   font-weight: 300;
+  color: #ffff;
+`;
+
+export const SmallLinksText = styled.span`
+  font-size: 1.2vw;
+  margin-left: 1vw;
+
+  font-weight: 600;
+  width: 30vw;
   color: #ffff;
 `;

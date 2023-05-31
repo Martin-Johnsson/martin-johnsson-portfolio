@@ -5,7 +5,7 @@ export interface IProjectsData {
   description?: string;
   tags: string[];
   links?: {
-    github?: string;
-    liveExample: string;
+    github?: string | null;
+    liveExample?: string;
   };
 }

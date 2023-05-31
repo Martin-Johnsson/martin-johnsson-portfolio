@@ -7,6 +7,7 @@ import {
   ToProjectsButton,
 } from '../styles/StyledComponents.ts';
 import { Box } from '@chakra-ui/react';
+
 const Splash = () => {
   const navigate = useNavigate();
   const handleOnHeadingClick = () => {
@@ -19,15 +20,15 @@ const Splash = () => {
   };
   return (
     <>
-      <Box bg='#242424' minHeight='100vh' display='flex' alignItems='center'>
+      <Box minHeight='100vh' display='flex' alignItems='center'>
         <PortfolioHomeContainer>
-          <BigHeading>HELLO THERE!</BigHeading>
-          <MediumHeading>My name is Martin Johnsson</MediumHeading>
+          <BigHeading>Hello and welcome!</BigHeading>
+          <MediumHeading>My name is Martin Johnsson,</MediumHeading>
           <MediumHeading>
             I'm a web developer based in Lund, Sweden
           </MediumHeading>
           <ThirdSizeHeading onClick={handleOnHeadingClick}>
-            Hit me up!
+            Let's get in touch!
           </ThirdSizeHeading>
           <Box>
             <ToProjectsButton onClick={handleOnToProjectsClick}>
