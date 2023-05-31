@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState = {
-  selectedProject: null,
+  selectedProject: 0,
   modalIsOpen: false,
 };
 
@@ -9,7 +9,7 @@ const projectsSlice = createSlice({
   name: 'projects',
   initialState,
   reducers: {
-    setSelectedProject: (state, action: PayloadAction<null>) => {
+    setSelectedProject: (state, action: PayloadAction<number>) => {
       state.selectedProject = action.payload;
     },
     setModalIsOpen: (state, action: PayloadAction<boolean>) => {

@@ -7,8 +7,7 @@ import {
   ModalContent,
   ModalOverlay,
 } from '@chakra-ui/react';
-import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import {
   ModalHeading,
@@ -18,12 +17,15 @@ import {
 import { projects } from '../assets/projectsData';
 import { RootState } from '../redux/store';
 
-const ProjectsModal = ({ modalIsOpen, closeModal }) => {
-  const dispatch = useDispatch();
+const ProjectsModal = ({
+  modalIsOpen,
+  closeModal,
+}: {
+  modalIsOpen: boolean;
+  closeModal: () => void;
+}) => {
   const projectsState = useSelector((state: RootState) => state.projects);
-
   const selectedProject = projects[projectsState.selectedProject];
-  const navigate = useNavigate();
   return (
     <>
       <Modal
@@ -52,7 +54,7 @@ const ProjectsModal = ({ modalIsOpen, closeModal }) => {
             </Flex>
             <Flex direction='column'>
               <Box color='white' alignSelf='center'>
-                {selectedProject.links.github && (
+                {selectedProject.links?.github && (
                   <Box marginTop='2vh' color='#fffff'>
                     <Link
                       href={selectedProject.links.github}
@@ -64,7 +66,7 @@ const ProjectsModal = ({ modalIsOpen, closeModal }) => {
                     </Link>
                   </Box>
                 )}
-                {!selectedProject.links.github && (
+                {!selectedProject.links?.github && (
                   <Flex direction='row' gap='0.2vw '>
                     <Box marginTop='2vh' color='#fffff' fontSize='1vw'>
                       <i className='fa-solid fa-code'></i>{' '}
