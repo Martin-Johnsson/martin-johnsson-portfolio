@@ -111,6 +111,12 @@ export const HeaderName = styled.h1`
   }
 `;
 
+export const NameHeader = styled.h1`
+  font-size: 2vw;
+  font-weight: 800;
+  color: #ffff;
+`;
+
 export const ContactSection = styled.section`
   text-align: center;
   border: 1px solid black;

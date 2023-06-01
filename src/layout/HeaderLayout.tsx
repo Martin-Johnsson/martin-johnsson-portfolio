@@ -1,10 +1,11 @@
 import { Box, Flex, Menu } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 import {
   StyledHeaderMenuItem,
   StyledNavLink,
   HeaderName,
+  NameHeader,
 } from '../styles/StyledComponents';
 
 const HeaderLayout = () => {
@@ -21,9 +22,9 @@ const HeaderLayout = () => {
             cursor='pointer'
             marginLeft='2vw'
           >
-            <StyledNavLink>
-              <HeaderName>MARTIN JOHNSSON</HeaderName>
-            </StyledNavLink>
+            <NavLink to='/'>
+              <NameHeader>MARTIN JOHNSSON</NameHeader>
+            </NavLink>
           </Box>
           <Box marginLeft='10vw'>
             <StyledNavLink to='/portfolio'>
