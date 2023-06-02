@@ -9,7 +9,7 @@ const Links = () => {
         direction='column'
         zIndex='3'
         position='fixed'
-        marginTop='70vh'
+        marginTop='60vh'
         marginLeft='0.1vw'
         border='0.1vw solid #000000'
         color='#ffff'

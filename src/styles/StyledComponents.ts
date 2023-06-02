@@ -41,7 +41,7 @@ export const ThirdSizeHeading = styled.h3`
   text-decoration: underline;
   &:hover {
     cursor: pointer;
-    color: #743a8a;
+    color: #483ab0;
   }
 `;
 
@@ -79,7 +79,7 @@ export const ToProjectsButton = styled.button`
   &:hover {
     border: 0.2vw solid #15181a;
     background-color: #313031;
-    color: #743a8a;
+    color: #483ab0;
     cursor: pointer;
   }
   &:active {
@@ -96,7 +96,7 @@ export const StyledHeaderMenuItem = styled(MenuItem)`
 
 export const StyledNavLink = styled(NavLink)`
   &.active {
-    background-color: #743a8a;
+    background-color: #483ab0;
   }
 `;
 
@@ -105,7 +105,7 @@ export const HeaderName = styled.h1`
   font-weight: 800;
   color: #ffff;
   &:hover {
-    color: #743a8a;
+    color: #483ab0;
   }
 `;
 
@@ -170,7 +170,7 @@ export const CustomInput = styled.input`
   &:hover {
     border: 0.2vw solid #15181a;
     background-color: #313031;
-    color: #743a8a;
+    color: #483ab0;
     cursor: pointer;
   }
   &:active {
@@ -181,4 +181,7 @@ export const CustomInput = styled.input`
 
 export const StyledLink = styled.span`
   color: #f79d14;
+  &:hover {
+    color: #483ab0;
+  }
 `;
