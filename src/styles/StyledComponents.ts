@@ -11,19 +11,19 @@ export const PortfolioHomeContainer = styled.section`
   top: 20vh;
   left: 50vw;
   margin-top: 10vh;
+  min-height: 100vh;
 `;
 
 export const BigHeading = styled.h1`
-  font-size: 2vw;
+  font-size: 4rem;
   display: block;
-  margin: 1vw;
   font-weight: 800;
   width: 100vw;
   color: #ffff;
 `;
 
 export const MediumHeading = styled.h2`
-  font-size: 1.7vw;
+  font-size: 1.7rem;
   display: block;
   margin: 1vw;
   font-weight: 600;
@@ -32,22 +32,21 @@ export const MediumHeading = styled.h2`
 `;
 
 export const ThirdSizeHeading = styled.h3`
-  font-size: 2vw;
+  font-size: 2rem;
   display: block;
   margin: 1vw;
   font-weight: 800;
   width: 30vw;
-  color: #ffff;
+  color: #f79d14;
   text-decoration: underline;
   &:hover {
     cursor: pointer;
-    text-decoration: underline;
-    color: #313031;
+    color: #743a8a;
   }
 `;
 
 export const BodyText = styled.h3`
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   display: block;
   margin-top: 1vw;
   margin-left: 1vw;
@@ -58,14 +57,13 @@ export const BodyText = styled.h3`
 `;
 
 export const SmallBodyText = styled.h4`
-  font-size: 1vw;
+  font-size: 1rem;
   display: block;
   margin-left: 2vw;
   margin-top: 0.5vh;
   margin-bottom: 2vw;
 
   font-weight: 600;
-  width: 30vw;
   color: #ffff;
 `;
 
@@ -76,7 +74,7 @@ export const ToProjectsButton = styled.button`
   text-align: center;
   margin-top: 10vh;
   padding: 8vh 4vw;
-  font-size: 3vw;
+  font-size: 1.5rem;
   font-weight: 800;
   &:hover {
     border: 0.2vw solid #15181a;
@@ -103,7 +101,7 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const HeaderName = styled.h1`
-  font-size: 2vw;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #ffff;
   &:hover {
@@ -112,9 +110,10 @@ export const HeaderName = styled.h1`
 `;
 
 export const NameHeader = styled.h1`
-  font-size: 2vw;
+  font-size: 1rem;
   font-weight: 800;
   color: #ffff;
+  margin-left: 0.5vh;
 `;
 
 export const ContactSection = styled.section`
@@ -127,7 +126,7 @@ export const ContactSection = styled.section`
 `;
 
 export const FormHeading = styled.h1`
-  font-size: 3vw;
+  font-size: 3rem;
   display: block;
   margin-top: 4vh;
   margin-bottom: 4vh;
@@ -136,29 +135,27 @@ export const FormHeading = styled.h1`
 `;
 
 export const ModalHeading = styled.h1`
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 800;
   color: #ffff;
 `;
 
 export const ModalSecondHeading = styled.h2`
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: 800;
   color: #ffff;
 `;
 
 export const ModalText = styled.span`
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 300;
   color: #ffff;
 `;
 
 export const SmallLinksText = styled.span`
-  font-size: 1.2vw;
+  font-size: 0.7rem;
   margin-left: 1vw;
-
-  font-weight: 600;
-  width: 30vw;
+  font-weight: 700;
   color: #ffff;
 `;
 
@@ -180,4 +177,8 @@ export const CustomInput = styled.input`
     background-color: #313031;
     border: none;
   }
+`;
+
+export const StyledLink = styled.span`
+  color: #f79d14;
 `;

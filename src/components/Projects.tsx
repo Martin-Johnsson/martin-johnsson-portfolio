@@ -31,7 +31,7 @@ const Projects = () => {
         spacing='10vh'
         align='center'
         marginBottom='2vh'
-        marginTop='6vh'
+        marginTop='11vh'
       >
         <Box textAlign='center'>
           <BigHeading>Projects</BigHeading>
@@ -46,6 +46,7 @@ const Projects = () => {
               onClick={() => {
                 handleExpandProject(index);
               }}
+              w='90vw'
             >
               <Flex direction='column' alignItems={'center'}>
                 <Box alignSelf='center'>
@@ -55,8 +56,8 @@ const Projects = () => {
                     {element.tags.map((tag) => {
                       return (
                         <Box
-                          flexBasis='1.5vw'
-                          border='0.2vw solid #0b3d54'
+                          max-w='5'
+                          border='0.2rem solid #0b3d54'
                           color='white'
                           marginLeft='0.6vw'
                           display='inline-block'

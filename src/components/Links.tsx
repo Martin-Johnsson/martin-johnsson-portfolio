@@ -9,15 +9,16 @@ const Links = () => {
         direction='column'
         zIndex='3'
         position='fixed'
-        marginTop='40vh'
+        marginTop='70vh'
         marginLeft='0.1vw'
-        border='0.1vw solid #ffff'
+        border='0.1vw solid #000000'
         color='#ffff'
+        h='25vh'
       >
         <Link isExternal href='https://github.com/Martin-Johnsson'>
           <Box
             backgroundColor='#15181a'
-            height='10vh'
+            height='6.2vh'
             border='0.1vw solid #ffff'
           >
             <SmallLinksText>
@@ -31,7 +32,7 @@ const Links = () => {
         >
           <Box
             backgroundColor='#0073b1'
-            height='10vh'
+            height='6.2vh'
             border='0.1vw solid #ffff'
           >
             <SmallLinksText>
@@ -41,12 +42,23 @@ const Links = () => {
         </Link>
         <Link download href='/files/Resume, Martin Johnsson.pdf'>
           <Box
-            backgroundColor='#34eb7a'
-            height='10vh'
+            backgroundColor='#f79d14'
+            height='6.2vh'
             border='0.1vw solid #ffff'
           >
             <SmallLinksText>
-              <i className='fa-regular fa-file'></i> Resume
+              <i className='fa-regular fa-file'></i> (EN)Resume
+            </SmallLinksText>
+          </Box>
+        </Link>
+        <Link download href='/files/CV, Martin Johnsson.pdf'>
+          <Box
+            backgroundColor='#f79d14'
+            height='6.2vh'
+            border='0.1vw solid #ffff'
+          >
+            <SmallLinksText>
+              <i className='fa-regular fa-file'></i> (SV)Resume
             </SmallLinksText>
           </Box>
         </Link>

@@ -13,35 +13,36 @@ const HeaderLayout = () => {
 
   return (
     <header>
-      <Menu>
-        <Flex>
-          <Box
-            onClick={() => {
-              navigate('/');
-            }}
-            cursor='pointer'
-            marginLeft='2vw'
-          >
-            <NavLink to='/'>
-              <NameHeader>MARTIN JOHNSSON</NameHeader>
-            </NavLink>
-          </Box>
-          <Box marginLeft='10vw'>
-            <StyledNavLink to='/portfolio'>
-              <StyledHeaderMenuItem>
-                <HeaderName>Portfolio</HeaderName>
-              </StyledHeaderMenuItem>
-            </StyledNavLink>
-          </Box>
-          <Box marginLeft='10vw'>
-            <StyledNavLink to='/contact'>
-              <StyledHeaderMenuItem>
-                <HeaderName>Contact</HeaderName>
-              </StyledHeaderMenuItem>
-            </StyledNavLink>
-          </Box>
-        </Flex>
-      </Menu>
+      <nav>
+        <Menu>
+          <Flex alignItems={'center'} h='12vh'>
+            <Box
+              onClick={() => {
+                navigate('/');
+              }}
+              cursor='pointer'
+            >
+              <NavLink to='/'>
+                <NameHeader>MARTIN JOHNSSON</NameHeader>
+              </NavLink>
+            </Box>
+            <Box marginLeft='10vw'>
+              <StyledNavLink to='/portfolio'>
+                <StyledHeaderMenuItem>
+                  <HeaderName>Portfolio</HeaderName>
+                </StyledHeaderMenuItem>
+              </StyledNavLink>
+            </Box>
+            <Box marginLeft='10vw'>
+              <StyledNavLink to='/contact'>
+                <StyledHeaderMenuItem>
+                  <HeaderName>Contact</HeaderName>
+                </StyledHeaderMenuItem>
+              </StyledNavLink>
+            </Box>
+          </Flex>
+        </Menu>
+      </nav>
     </header>
   );
 };

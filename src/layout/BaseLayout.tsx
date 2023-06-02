@@ -19,10 +19,11 @@ const BaseLayout = () => {
           position='fixed'
           zIndex='1'
           width='100vw'
+          h='12vh'
         >
           <HeaderLayout />
         </GridItem>
-        <GridItem className='main' area='main' bg='#15181a' minHeight='95vh'>
+        <GridItem className='main' area='main' bg='#15181a' minHeight='100vh'>
           <Links />
           <Outlet />
         </GridItem>

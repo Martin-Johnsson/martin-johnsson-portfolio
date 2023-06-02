@@ -13,6 +13,7 @@ import {
   ModalHeading,
   ModalText,
   ModalSecondHeading,
+  StyledLink,
 } from '../styles/StyledComponents';
 import { projects } from '../assets/projectsData';
 import { RootState } from '../redux/store';
@@ -35,18 +36,18 @@ const ProjectsModal = ({
         closeOnOverlayClick={true}
       >
         <ModalOverlay>
-          <ModalContent bg='#242424' w='60vw' h='80vh'>
+          <ModalContent bg='#242424' w='90vw' h='70vh'>
             <Box textAlign='center'>
               <ModalHeading>{selectedProject.name}</ModalHeading>
             </Box>
             <Flex direction='row' marginTop='3vh'>
-              <Box w='50vw' marginLeft='3vw' borderRight='0.5vw solid #15181a'>
+              <Box marginLeft='3vw'>
                 <Img
                   src={selectedProject.image}
                   alt='Screenshot of Insights application'
                 />
               </Box>
-              <Box w='60vw'>
+              <Box marginLeft='1vw' borderLeft='0.5vw solid #15181a'>
                 <ModalSecondHeading>About</ModalSecondHeading>
 
                 <ModalText>{selectedProject.about}</ModalText>
@@ -59,18 +60,37 @@ const ProjectsModal = ({
                     <Link
                       href={selectedProject.links.github}
                       isExternal
-                      fontSize='1vw'
+                      fontSize='1rem'
                     >
                       <i className='fa-solid fa-code'></i>
-                      <span> Checkout the code!</span>
+                      <StyledLink> Checkout the code!</StyledLink>
                     </Link>
+                    {selectedProject.links?.liveExample && (
+                      <Box marginTop='2vh'>
+                        <Link
+                          href={selectedProject.links.liveExample}
+                          isExternal
+                          fontSize='1rem'
+                        >
+                          <i className='fa-solid fa-laptop-code'></i>
+                          <StyledLink>
+                            {' '}
+                            Checkout live on codeSandbox!
+                          </StyledLink>
+                        </Link>
+                      </Box>
+                    )}
                   </Box>
                 )}
+
                 {!selectedProject.links?.github && (
                   <Flex direction='row' gap='0.2vw '>
-                    <Box marginTop='2vh' color='#fffff' fontSize='1vw'>
-                      <i className='fa-solid fa-code'></i>{' '}
-                      <span>No code available. NDA Protected.</span>
+                    <Box marginTop='2vh' color='#fffff' fontSize='1rem'>
+                      <i className='fa-solid fa-code'></i>
+                      <StyledLink>
+                        {' '}
+                        No code available. NDA Protected.
+                      </StyledLink>
                     </Box>
                     <Box></Box>
                   </Flex>

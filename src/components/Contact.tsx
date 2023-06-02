@@ -40,6 +40,10 @@ const Contact = () => {
           console.error(error);
         }
       );
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -74,7 +78,7 @@ const Contact = () => {
                         name='user_email'
                         component='input'
                         type='email'
-                        placeholder=' * Someone@abc.com'
+                        placeholder='someone@abc.com'
                         required='true'
                       ></Field>
                     </Box>
@@ -84,14 +88,13 @@ const Contact = () => {
                         name='message'
                         component='textarea'
                         type='text'
-                        placeholder='What´s on your mind?'
+                        placeholder="What's on your mind?"
                         style={{ width: '70vw', height: '30vh' }}
                         required='true'
                       ></Field>
                     </Box>
-
-                    <Box padding='0'>
-                      <CustomInput type='submit' value='Send' />{' '}
+                    <Box>
+                      <CustomInput type='submit' value='Send' />
                     </Box>
                   </Flex>
                 </form>
@@ -102,7 +105,7 @@ const Contact = () => {
       </Box>
 
       {!contactState.emailSubmitting && contactState.emailSubmitted && (
-        <Box>
+        <Box marginTop='10vh'>
           <BigHeading>Thank you!</BigHeading>
           <BigHeading>I'll get back to you as soon as possible.</BigHeading>
         </Box>
