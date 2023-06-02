@@ -11,6 +11,13 @@ import {
 const HeaderLayout = () => {
   const navigate = useNavigate();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <header>
       <nav>
@@ -19,6 +26,7 @@ const HeaderLayout = () => {
             <Box
               onClick={() => {
                 navigate('/');
+                scrollToTop();
               }}
               cursor='pointer'
             >
@@ -28,14 +36,14 @@ const HeaderLayout = () => {
             </Box>
             <Box marginLeft='10vw'>
               <StyledNavLink to='/portfolio'>
-                <StyledHeaderMenuItem>
+                <StyledHeaderMenuItem onClick={scrollToTop}>
                   <HeaderName>Portfolio</HeaderName>
                 </StyledHeaderMenuItem>
               </StyledNavLink>
             </Box>
             <Box marginLeft='10vw'>
               <StyledNavLink to='/contact'>
-                <StyledHeaderMenuItem>
+                <StyledHeaderMenuItem onClick={scrollToTop}>
                   <HeaderName>Contact</HeaderName>
                 </StyledHeaderMenuItem>
               </StyledNavLink>

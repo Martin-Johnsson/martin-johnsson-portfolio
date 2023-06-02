@@ -97,6 +97,7 @@ export const StyledHeaderMenuItem = styled(MenuItem)`
 export const StyledNavLink = styled(NavLink)`
   &.active {
     background-color: #483ab0;
+    color: #fffff;
   }
 `;
 
@@ -105,7 +106,7 @@ export const HeaderName = styled.h1`
   font-weight: 800;
   color: #ffff;
   &:hover {
-    color: #483ab0;
+    color: #fffff;
   }
 `;
 
