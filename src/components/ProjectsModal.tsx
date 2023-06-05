@@ -53,6 +53,7 @@ const ProjectsModal = ({
                   marginLeft='2vw'
                   borderLeft='0.5vw solid #15181a'
                   maxW='60vw'
+                  maxH='98vh'
                 >
                   <ModalSecondHeading>About</ModalSecondHeading>
                   <ModalText>{selectedProject.about}</ModalText>
