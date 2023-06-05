@@ -2,7 +2,8 @@ import { IProjectsData } from '../types/interfaces';
 
 export const projects: IProjectsData[] = [
   {
-    image: 'images/Insights.png',
+    frontImage: 'images/smartrefill.jfif',
+    modalImage: 'images/Insights.png',
     name: 'Insights',
     description: '- Data analysis and management tool.',
     about: `This project was about creating an data analysis and management tool. We were 4 colleagues responsible for the project. Me, another Frontend Devloper and two UX. There were two senior developers reviewing our code.`,
@@ -22,7 +23,8 @@ export const projects: IProjectsData[] = [
     },
   },
   {
-    image: 'images/eWallet.png',
+    frontImage: 'E-wallet',
+    modalImage: '',
     name: 'E-wallet',
     description:
       '- An digital wallet for credit cards. (In progress to be migrated to Vite, TypeScript, React-router v.6 and improve Redux structure)',
@@ -34,7 +36,8 @@ export const projects: IProjectsData[] = [
     },
   },
   {
-    image: 'images/eWallet.png',
+    frontImage: 'images/eWallet.png',
+    modalImage: '',
     name: 'Highscore',
     description: '- Highscore overview using dB.',
     about: `This project aimed to utilize Node.js and SQL. `,
@@ -45,7 +48,8 @@ export const projects: IProjectsData[] = [
     },
   },
   {
-    image: 'images/eWallet.png',
+    frontImage: 'images/Knowit.png',
+    modalImage: 'images/TimeModal.png',
     name: 'Times',
     description: '- Time management system.',
     about:

@@ -19,7 +19,7 @@ export const BigHeading = styled.h1`
   display: block;
   font-weight: 800;
   width: 100vw;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const MediumHeading = styled.h2`
@@ -28,7 +28,7 @@ export const MediumHeading = styled.h2`
   margin: 1vw;
   font-weight: 600;
   width: 100vw;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const ThirdSizeHeading = styled.h3`
@@ -53,7 +53,7 @@ export const BodyText = styled.h3`
 
   font-weight: 600;
   width: 30vw;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const SmallBodyText = styled.h4`
@@ -64,13 +64,13 @@ export const SmallBodyText = styled.h4`
   margin-bottom: 2vw;
 
   font-weight: 600;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const ToProjectsButton = styled.button`
   background-color: #313031;
-  color: #ffffff;
-  border: 0.2vw solid #ffffff;
+  color: #f5f0f0;
+  border: 0.2vw solid #f5f0f0;
   text-align: center;
   margin-top: 10vh;
   padding: 8vh 4vw;
@@ -97,23 +97,23 @@ export const StyledHeaderMenuItem = styled(MenuItem)`
 export const StyledNavLink = styled(NavLink)`
   &.active {
     background-color: #483ab0;
-    color: #fffff;
+    color: #f5f0f0;
   }
 `;
 
 export const HeaderName = styled.h1`
   font-size: 1.3rem;
   font-weight: 800;
-  color: #ffff;
+  color: #f5f0f0;
   &:hover {
-    color: #fffff;
+    color: #f5f0f0f;
   }
 `;
 
 export const NameHeader = styled.h1`
   font-size: 1rem;
   font-weight: 800;
-  color: #ffff;
+  color: #f5f0f0;
   margin-left: 0.5vh;
 `;
 
@@ -132,38 +132,38 @@ export const FormHeading = styled.h1`
   margin-top: 4vh;
   margin-bottom: 4vh;
   font-weight: 800;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const ModalHeading = styled.h1`
   font-size: 3rem;
   font-weight: 800;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const ModalSecondHeading = styled.h2`
   font-size: 2rem;
   font-weight: 800;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const ModalText = styled.span`
   font-size: 1rem;
   font-weight: 300;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const SmallLinksText = styled.span`
   font-size: 0.7rem;
   margin-left: 1vw;
   font-weight: 700;
-  color: #ffff;
+  color: #f5f0f0;
 `;
 
 export const CustomInput = styled.input`
   background-color: #313031;
-  color: #ffffff;
-  border: 0.2vw solid #ffffff;
+  color: #f5f0f0ff;
+  border: 0.2vw solid #f5f0f0ff;
   text-align: center;
   padding: 2vh 10vw;
   font-size: 2vw;

@@ -58,7 +58,7 @@ const Projects = () => {
                         <Box
                           max-w='5'
                           border='0.2rem solid #0b3d54'
-                          color='white'
+                          color='#f5f0f0'
                           marginLeft='0.6vw'
                           display='inline-block'
                           padding='0.2vw'
@@ -75,8 +75,9 @@ const Projects = () => {
                   marginTop='5vh'
                 >
                   <Img
-                    src={element.image}
+                    src={element.frontImage}
                     alt='Screenshot of Insights application'
+                    borderRadius='1.5vw'
                   />
                 </Box>
               </Flex>

@@ -1,5 +1,6 @@
 export interface IProjectsData {
-  image?: any;
+  frontImage?: string;
+  modalImage?: string;
   name: string;
   about: string;
   description?: string;

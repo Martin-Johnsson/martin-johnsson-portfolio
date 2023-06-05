@@ -12,14 +12,14 @@ const Links = () => {
         marginTop='60vh'
         marginLeft='0.1vw'
         border='0.1vw solid #000000'
-        color='#ffff'
+        color='#f5f0f0'
         h='25vh'
       >
         <Link isExternal href='https://github.com/Martin-Johnsson'>
           <Box
             backgroundColor='#15181a'
             height='6.2vh'
-            border='0.1vw solid #ffff'
+            border='0.1vw solid #f5f0f0'
           >
             <SmallLinksText>
               <i className='fa-brands fa-github'></i> GitHub
@@ -33,7 +33,7 @@ const Links = () => {
           <Box
             backgroundColor='#0073b1'
             height='6.2vh'
-            border='0.1vw solid #ffff'
+            border='0.1vw solid #f5f0f0'
           >
             <SmallLinksText>
               <i className='fa-brands fa-linkedin'></i> Linkedin
@@ -44,7 +44,7 @@ const Links = () => {
           <Box
             backgroundColor='#f79d14'
             height='6.2vh'
-            border='0.1vw solid #ffff'
+            border='0.1vw solid #f5f0f0'
           >
             <SmallLinksText>
               <i className='fa-regular fa-file'></i> (EN)Resume
@@ -55,7 +55,7 @@ const Links = () => {
           <Box
             backgroundColor='#f79d14'
             height='6.2vh'
-            border='0.1vw solid #ffff'
+            border='0.1vw solid #f5f0f0'
           >
             <SmallLinksText>
               <i className='fa-regular fa-file'></i> (SV)Resume

@@ -44,8 +44,9 @@ const ProjectsModal = ({
               <Flex direction='row'>
                 <Box marginLeft='3vw'>
                   <Img
-                    src={selectedProject.image}
+                    src={selectedProject.modalImage}
                     alt='Screenshot of Insights application'
+                    borderRadius='1.5vw'
                   />
                 </Box>
                 <Box marginLeft='1vw' borderLeft='0.5vw solid #15181a'>
@@ -54,7 +55,7 @@ const ProjectsModal = ({
                 </Box>
               </Flex>
               <Flex direction='column'>
-                <Box color='#ffffff' alignSelf='center'>
+                <Box color='#f5f0f0' alignSelf='center'>
                   {selectedProject.links?.github && (
                     <Link href={selectedProject.links.github} isExternal>
                       <i className='fa-solid fa-code'></i>
