@@ -49,7 +49,11 @@ const ProjectsModal = ({
                     borderRadius='1.5vw'
                   />
                 </Box>
-                <Box marginLeft='1vw' borderLeft='0.5vw solid #15181a'>
+                <Box
+                  marginLeft='2vw'
+                  borderLeft='0.5vw solid #15181a'
+                  maxW='60vw'
+                >
                   <ModalSecondHeading>About</ModalSecondHeading>
                   <ModalText>{selectedProject.about}</ModalText>
                 </Box>
