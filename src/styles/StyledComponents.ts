@@ -149,7 +149,7 @@ export const ModalSecondHeading = styled.h2`
 
 export const ModalText = styled.span`
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 700;
   color: #f5f0f0;
 `;
 
