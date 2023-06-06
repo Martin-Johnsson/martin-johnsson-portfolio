@@ -136,7 +136,7 @@ export const FormHeading = styled.h1`
 `;
 
 export const ModalHeading = styled.h1`
-  font-size: 3rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #f5f0f0;
 `;
