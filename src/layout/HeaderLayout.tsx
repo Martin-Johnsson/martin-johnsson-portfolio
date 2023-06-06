@@ -30,20 +30,20 @@ const HeaderLayout = () => {
               }}
               cursor='pointer'
             >
-              <NavLink to='/'>
+              <NavLink to='/' onClick={scrollToTop}>
                 <NameHeader>MARTIN JOHNSSON</NameHeader>
               </NavLink>
             </Box>
             <Box marginLeft='10vw'>
-              <StyledNavLink to='/portfolio'>
-                <StyledHeaderMenuItem onClick={scrollToTop}>
+              <StyledNavLink to='/portfolio' onClick={scrollToTop}>
+                <StyledHeaderMenuItem>
                   <HeaderName>Portfolio</HeaderName>
                 </StyledHeaderMenuItem>
               </StyledNavLink>
             </Box>
             <Box marginLeft='10vw'>
-              <StyledNavLink to='/contact'>
-                <StyledHeaderMenuItem onClick={scrollToTop}>
+              <StyledNavLink to='/contact' onClick={scrollToTop}>
+                <StyledHeaderMenuItem>
                   <HeaderName>Contact</HeaderName>
                 </StyledHeaderMenuItem>
               </StyledNavLink>

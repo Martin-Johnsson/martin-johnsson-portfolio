@@ -9,15 +9,23 @@ import {
 import { Box } from '@chakra-ui/react';
 
 const Splash = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const navigate = useNavigate();
   const handleOnHeadingClick = () => {
-    console.log('hello');
-    return navigate('/contact');
+    scrollToTop();
+    navigate('/contact');
   };
   const handleOnToProjectsClick = () => {
-    console.log('hello');
-    return navigate('/portfolio');
+    navigate('/portfolio');
+    scrollToTop();
   };
+
   return (
     <>
       <PortfolioHomeContainer>
