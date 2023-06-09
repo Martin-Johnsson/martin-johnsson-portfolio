@@ -22,7 +22,7 @@ const Splash = () => {
     navigate('/contact');
   };
   const handleOnToProjectsClick = () => {
-    navigate('/portfolio');
+    navigate('/projects');
     scrollToTop();
   };
 
