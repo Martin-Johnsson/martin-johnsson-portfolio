@@ -119,9 +119,8 @@ export const NameHeader = styled.h1`
 
 export const ContactSection = styled.section`
   text-align: center;
-  border: 1px solid black;
   height: 100vh;
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 10vh;
   width: 100vw;
 `;
