@@ -35,9 +35,9 @@ const HeaderLayout = () => {
               </NavLink>
             </Box>
             <Box marginLeft='10vw'>
-              <StyledNavLink to='/portfolio' onClick={scrollToTop}>
+              <StyledNavLink to='/projects' onClick={scrollToTop}>
                 <StyledHeaderMenuItem>
-                  <HeaderName>Portfolio</HeaderName>
+                  <HeaderName>Projects</HeaderName>
                 </StyledHeaderMenuItem>
               </StyledNavLink>
             </Box>

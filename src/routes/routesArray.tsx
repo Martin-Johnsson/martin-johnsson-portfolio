@@ -1,7 +1,7 @@
 import Splash from './Splash';
 import BaseLayout from '../layout/BaseLayout';
-import Portfolio from './Portfolio';
 import Contact from '../components/Contact';
+import Projects from '../components/Projects';
 
 export const routes = [
   {
@@ -13,9 +13,9 @@ export const routes = [
         element: <Splash />,
       },
       {
-        path: 'portfolio',
+        path: 'projects',
         index: true,
-        element: <Portfolio />,
+        element: <Projects />,
       },
       {
         path: 'contact',

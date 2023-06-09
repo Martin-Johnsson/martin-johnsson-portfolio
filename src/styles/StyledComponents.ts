@@ -8,10 +8,7 @@ export const PortfolioHomeContainer = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 20vh;
-  left: 50vw;
-  margin-top: 10vh;
-  min-height: 100vh;
+  margin-top: 15vh;
 `;
 
 export const BigHeading = styled.h1`
@@ -20,12 +17,13 @@ export const BigHeading = styled.h1`
   font-weight: 800;
   width: 100vw;
   color: #f5f0f0;
+  margin-bottom: 1vh;
 `;
 
 export const MediumHeading = styled.h2`
   font-size: 1.7rem;
   display: block;
-  margin: 1vw;
+  margin-bottom: 1vh;
   font-weight: 600;
   width: 100vw;
   color: #f5f0f0;
@@ -34,7 +32,7 @@ export const MediumHeading = styled.h2`
 export const ThirdSizeHeading = styled.h3`
   font-size: 2rem;
   display: block;
-  margin: 1vw;
+  margin-bottom: 1vh;
   font-weight: 800;
   width: 30vw;
   color: #f79d14;
@@ -48,9 +46,6 @@ export const ThirdSizeHeading = styled.h3`
 export const BodyText = styled.h3`
   font-size: 1.5rem;
   display: block;
-  margin-top: 1vw;
-  margin-left: 1vw;
-
   font-weight: 600;
   width: 30vw;
   color: #f5f0f0;
@@ -59,12 +54,26 @@ export const BodyText = styled.h3`
 export const SmallBodyText = styled.h4`
   font-size: 1rem;
   display: block;
-  margin-left: 2vw;
-  margin-top: 0.5vh;
-  margin-bottom: 2vw;
-
   font-weight: 600;
   color: #f5f0f0;
+`;
+
+export const SmallScreenBodyText = styled.h3`
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 600;
+  width: 30vw;
+  color: #f5f0f0;
+`;
+
+export const SmallScreenSmallBodyText = styled.h4`
+  font-size: 1rem;
+  display: block;
+  font-weight: 600;
+  color: #f5f0f0;
+  margin-top: 1vh;
+  margin-left: 2vh;
+  margin-bottom: 2.5vh;
 `;
 
 export const ToProjectsButton = styled.button`
@@ -184,4 +193,8 @@ export const StyledLink = styled.span`
   &:hover {
     color: #483ab0;
   }
+`;
+
+export const ProjectsSection = styled.section`
+  margin-top: 15vh;
 `;
