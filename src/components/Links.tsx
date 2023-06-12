@@ -13,7 +13,7 @@ const Links = () => {
         marginLeft='0.1vw'
         border='0.1vw solid #000000'
         color='#f5f0f0'
-        h='25vh'
+        h='12.4vh'
       >
         <Link isExternal href='https://github.com/Martin-Johnsson'>
           <Box
@@ -37,28 +37,6 @@ const Links = () => {
           >
             <SmallLinksText>
               <i className='fa-brands fa-linkedin'></i> Linkedin
-            </SmallLinksText>
-          </Box>
-        </Link>
-        <Link download href='/files/Resume, Martin Johnsson.pdf'>
-          <Box
-            backgroundColor='#f79d14'
-            height='6.2vh'
-            border='0.1vw solid #f5f0f0'
-          >
-            <SmallLinksText>
-              <i className='fa-regular fa-file'></i> (EN)Resume
-            </SmallLinksText>
-          </Box>
-        </Link>
-        <Link download href='/files/CV, Martin Johnsson.pdf'>
-          <Box
-            backgroundColor='#f79d14'
-            height='6.2vh'
-            border='0.1vw solid #f5f0f0'
-          >
-            <SmallLinksText>
-              <i className='fa-regular fa-file'></i> (SV)Resume
             </SmallLinksText>
           </Box>
         </Link>
