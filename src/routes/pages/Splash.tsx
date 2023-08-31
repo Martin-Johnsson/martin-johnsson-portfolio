@@ -35,6 +35,7 @@ const Splash = () => {
         Let's get in touch!
       </ThirdSizeHeading>
       <Box>
+        <MediumHeading>Or</MediumHeading>
         <ToProjectsButton onClick={handleOnToProjectsClick}>
           View my projects
         </ToProjectsButton>

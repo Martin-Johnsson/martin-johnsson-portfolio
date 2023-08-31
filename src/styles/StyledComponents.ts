@@ -81,7 +81,7 @@ export const ToProjectsButton = styled.button`
   color: #f5f0f0;
   border: 0.2vw solid #f5f0f0;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 1vh;
   padding: 8vh 4vw;
   font-size: 1.5rem;
   font-weight: 800;
