@@ -7,6 +7,7 @@ import {
   WrapItem,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { FC } from 'react';
 
 import {
   BigHeading,
@@ -19,11 +20,14 @@ import {
 import { projects } from '../assets/projectsData';
 import ProjectsModal from './ProjectsModal';
 import { RootState } from '../redux/store';
+import { IProjectState } from '../types/interfaces';
 
-const Projects = () => {
+const Projects: FC = () => {
   const dispatch = useDispatch();
 
-  const projectsState = useSelector((state: RootState) => state.projects);
+  const projectsState: IProjectState = useSelector(
+    (state: RootState) => state.projects
+  );
 
   const handleExpandProject = (index: number) => {
     dispatch({ type: 'projects/setModalIsOpen', payload: true });

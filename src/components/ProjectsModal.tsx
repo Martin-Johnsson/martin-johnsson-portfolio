@@ -18,6 +18,7 @@ import {
 } from '../styles/StyledComponents';
 import { projects } from '../assets/projectsData';
 import { RootState } from '../redux/store';
+import { IProjectState } from '../types/interfaces';
 
 const ProjectsModal = ({
   modalIsOpen,
@@ -26,7 +27,9 @@ const ProjectsModal = ({
   modalIsOpen: boolean;
   closeModal: () => void;
 }) => {
-  const projectsState = useSelector((state: RootState) => state.projects);
+  const projectsState: IProjectState = useSelector(
+    (state: RootState) => state.projects
+  );
   const selectedProject = projects[projectsState.selectedProject];
 
   const isSmallerThanLg = useBreakpointValue({ base: true, lg: false });

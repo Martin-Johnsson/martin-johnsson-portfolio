@@ -1,4 +1,9 @@
-export interface IProjectsData {
+export interface IProjectState {
+  selectedProject: number;
+  modalIsOpen: boolean;
+}
+
+export interface IProject {
   frontImage?: string;
   modalImage?: string;
   name: string;
