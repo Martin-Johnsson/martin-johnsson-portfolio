@@ -4,6 +4,8 @@ import { Form, Field } from 'react-final-form';
 import emailjs from '@emailjs/browser';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { FC } from 'react';
+
 import {
   BigHeading,
   ContactSection,
@@ -14,7 +16,7 @@ import {
 
 import { RootState } from '../redux/store';
 
-const Contact = () => {
+const Contact: FC = () => {
   const form: RefObject<any> = useRef(null);
   const contactState = useSelector((state: RootState) => state.contact);
 
