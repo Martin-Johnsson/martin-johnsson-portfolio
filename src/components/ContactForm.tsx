@@ -5,7 +5,9 @@ import emailjs from '@emailjs/browser';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { FC } from 'react';
+import { Dispatch } from '@reduxjs/toolkit';
 
+import { IContactState } from '@/types/interfaces';
 import {
   BigHeading,
   ContactSection,
@@ -18,9 +20,11 @@ import { RootState } from '../redux/store';
 
 const ContactForm: FC = () => {
   const form: RefObject<any> = useRef(null);
-  const contactState = useSelector((state: RootState) => state.contact);
+  const contactState: IContactState = useSelector(
+    (state: RootState) => state.contact
+  );
 
-  const dispatch = useDispatch();
+  const dispatch: Dispatch = useDispatch();
 
   const sendEmail = (e: FormEvent) => {
     dispatch({ type: 'contact/setEmailSubmitting', payload: true });

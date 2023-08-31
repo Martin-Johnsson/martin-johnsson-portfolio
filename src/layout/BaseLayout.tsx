@@ -2,7 +2,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 
 import HeaderLayout from './HeaderLayout';
-import Links from '../components/Links';
+import Links from '../components/SocalLinks';
 
 const BaseLayout = () => {
   return (
