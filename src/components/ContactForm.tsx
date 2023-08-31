@@ -16,7 +16,7 @@ import {
 
 import { RootState } from '../redux/store';
 
-const Contact: FC = () => {
+const ContactForm: FC = () => {
   const form: RefObject<any> = useRef(null);
   const contactState = useSelector((state: RootState) => state.contact);
 
@@ -119,4 +119,4 @@ const Contact: FC = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

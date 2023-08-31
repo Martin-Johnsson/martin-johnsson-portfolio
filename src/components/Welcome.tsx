@@ -5,10 +5,10 @@ import {
   PortfolioHomeContainer,
   ThirdSizeHeading,
   ToProjectsButton,
-} from '../../styles/StyledComponents.ts';
+} from '../styles/StyledComponents.ts';
 import { Box } from '@chakra-ui/react';
 
-const Splash = () => {
+const Welcome = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -30,7 +30,9 @@ const Splash = () => {
     <PortfolioHomeContainer>
       <BigHeading>Hi!</BigHeading>
       <MediumHeading>My name is Martin Johnsson,</MediumHeading>
-      <MediumHeading>I'm a web developer based in Lund, Sweden</MediumHeading>
+      <MediumHeading>
+        I'm a Front End Developer based in Lund, Sweden
+      </MediumHeading>
       <ThirdSizeHeading onClick={handleOnHeadingClick}>
         Let's get in touch!
       </ThirdSizeHeading>
@@ -44,4 +46,4 @@ const Splash = () => {
   );
 };
 
-export default Splash;
+export default Welcome;

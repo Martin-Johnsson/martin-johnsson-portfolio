@@ -1,9 +1,9 @@
 import { RouteObject } from 'react-router-dom';
 
-import Splash from './pages/Splash';
 import BaseLayout from '../layout/BaseLayout';
-import Contact from '../components/Contact';
-import Projects from '../components/Projects';
+import Contact from '../components/ContactForm';
+import Projects from '../components/previousProjects/PreviousProjects';
+import Landing from './pages/Landing';
 
 export const routes: RouteObject[] = [
   {
@@ -12,7 +12,7 @@ export const routes: RouteObject[] = [
       {
         path: '/',
         index: true,
-        element: <Splash />,
+        element: <Landing />,
       },
       {
         path: 'projects',

@@ -15,10 +15,10 @@ import {
   ModalText,
   ModalSecondHeading,
   StyledLink,
-} from '../styles/StyledComponents';
-import { projects } from '../assets/projectsData';
-import { RootState } from '../redux/store';
-import { IProjectState } from '../types/interfaces';
+} from '../../styles/StyledComponents';
+import { projects } from '../../assets/projectsData';
+import { RootState } from '../../redux/store';
+import { IProjectState } from '../../types/interfaces';
 
 const ProjectsModal = ({
   modalIsOpen,

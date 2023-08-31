@@ -16,11 +16,11 @@ import {
   SmallBodyText,
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
-} from '../styles/StyledComponents';
-import { projects } from '../assets/projectsData';
-import ProjectsModal from './ProjectsModal';
-import { RootState } from '../redux/store';
-import { IProjectState } from '../types/interfaces';
+} from '../../styles/StyledComponents';
+import { projects } from '../../assets/projectsData';
+import ProjectsModal from './PreviousProjectsModal';
+import { RootState } from '../../redux/store';
+import { IProjectState } from '../../types/interfaces';
 
 const Projects: FC = () => {
   const dispatch = useDispatch();
