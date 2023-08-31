@@ -2,6 +2,10 @@ export interface IProjectState {
   selectedProject: number;
   modalIsOpen: boolean;
 }
+export interface IContactState {
+  emailSubmitting: boolean;
+  emailSubmitted: boolean;
+}
 
 export interface IProject {
   frontImage?: string;

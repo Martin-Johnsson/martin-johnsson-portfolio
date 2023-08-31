@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const initialState = {
+import { IContactState } from '@/types/interfaces';
+
+const initialState: IContactState = {
   emailSubmitting: false,
   emailSubmitted: false,
 };
