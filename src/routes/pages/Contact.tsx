@@ -1,5 +1,4 @@
 import { FC } from 'react';
-
 import ContactForm from '../../components/ContactForm';
 
 const Contact: FC = () => {

@@ -8,7 +8,6 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 import { FC } from 'react';
-import { Dispatch } from '@reduxjs/toolkit';
 
 import {
   BigHeading,
@@ -24,13 +23,13 @@ import { RootState } from '../../redux/store';
 import { IProjectState } from '../../types/interfaces';
 
 const Projects: FC = () => {
-  const dispatch: Dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const projectsState: IProjectState = useSelector(
     (state: RootState) => state.projects
   );
 
-  const handleExpandProject: Function = (index: number) => {
+  const handleExpandProject = (index: number) => {
     dispatch({ type: 'projects/setModalIsOpen', payload: true });
     dispatch({ type: 'projects/setSelectedProject', payload: index });
   };
@@ -39,10 +38,7 @@ const Projects: FC = () => {
     dispatch({ type: 'projects/setModalIsOpen', payload: false });
   };
 
-  const isSmallerThanLg = useBreakpointValue({
-    base: true,
-    lg: false,
-  });
+  const isSmallerThanLg = useBreakpointValue({ base: true, lg: false });
 
   return (
     <ProjectsSection>

@@ -1,7 +1,4 @@
-import { FC, MouseEventHandler } from 'react';
-import { NavigateFunction, useNavigate } from 'react-router-dom';
-import { Box } from '@chakra-ui/react';
-
+import { useNavigate } from 'react-router-dom';
 import {
   BigHeading,
   MediumHeading,
@@ -9,24 +6,26 @@ import {
   ThirdSizeHeading,
   ToProjectsButton,
 } from '../styles/StyledComponents.ts';
+import { Box } from '@chakra-ui/react';
 
-const Welcome: FC = () => {
-  const navigate: NavigateFunction = useNavigate();
-  const handleOnHeadingClick: MouseEventHandler<HTMLHeadingElement> = () => {
-    scrollToTop();
-    navigate('/contact');
-  };
-  const handleOnToProjectsClick: MouseEventHandler<HTMLButtonElement> = () => {
-    navigate('/projects');
-    scrollToTop();
-  };
-
-  const scrollToTop: Function = () => {
+const Welcome = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
+
+  const navigate = useNavigate();
+  const handleOnHeadingClick = () => {
+    scrollToTop();
+    navigate('/contact');
+  };
+  const handleOnToProjectsClick = () => {
+    navigate('/projects');
+    scrollToTop();
+  };
+
   return (
     <PortfolioHomeContainer>
       <BigHeading>Hi!</BigHeading>
