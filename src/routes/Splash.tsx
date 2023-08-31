@@ -28,7 +28,7 @@ const Splash = () => {
 
   return (
     <PortfolioHomeContainer>
-      <BigHeading>Hello and welcome!</BigHeading>
+      <BigHeading>Hi!</BigHeading>
       <MediumHeading>My name is Martin Johnsson,</MediumHeading>
       <MediumHeading>I'm a web developer based in Lund, Sweden</MediumHeading>
       <ThirdSizeHeading onClick={handleOnHeadingClick}>
