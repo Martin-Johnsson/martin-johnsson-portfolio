@@ -1,6 +1,6 @@
-import { IProjectsData } from '../types/interfaces';
+import { IProject } from '../types/interfaces';
 
-export const projects: IProjectsData[] = [
+export const projects: IProject[] = [
   {
     frontImage: 'images/smartrefill.jfif',
     modalImage: 'images/insights.png',
