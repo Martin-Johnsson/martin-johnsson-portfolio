@@ -5,7 +5,7 @@ import {
   PortfolioHomeContainer,
   ThirdSizeHeading,
   ToProjectsButton,
-} from '../styles/StyledComponents.ts';
+} from '../../styles/StyledComponents.ts';
 import { Box } from '@chakra-ui/react';
 
 const Splash = () => {

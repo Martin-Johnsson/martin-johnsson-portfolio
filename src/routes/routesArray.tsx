@@ -1,4 +1,4 @@
-import Splash from './Splash';
+import Splash from './pages/Splash';
 import BaseLayout from '../layout/BaseLayout';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
