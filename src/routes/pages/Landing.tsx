@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Welcome from '../../components/Welcome';
+
 const Landing: FC = () => {
   return (
     <main>
