@@ -1,9 +1,11 @@
+import { RouteObject } from 'react-router-dom';
+
 import Splash from './pages/Splash';
 import BaseLayout from '../layout/BaseLayout';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
 
-export const routes = [
+export const routes: RouteObject[] = [
   {
     element: [<BaseLayout />],
     children: [
