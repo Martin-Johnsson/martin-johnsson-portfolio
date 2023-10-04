@@ -1,5 +1,6 @@
 import { MenuItem } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
 
 export const PortfolioHomeContainer = styled.section`
@@ -197,4 +198,16 @@ export const StyledLink = styled.span`
 
 export const ProjectsSection = styled.section`
   margin-top: 15vh;
+`;
+
+export const LazyLoadingImage = styled(LazyLoadImage)`
+  border-radius: 1.5vw;
+  width: 100%;
+  height: 100%;
+`;
+
+export const LazyLoadingModalImage = styled(LazyLoadImage)`
+  border-radius: 1.5vw;
+  width: 40%;
+  height: 40%;
 `;
