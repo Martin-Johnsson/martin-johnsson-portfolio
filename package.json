@@ -1,7 +1,7 @@
 {
   "homepage": "https://martin-johnsson.github.io/martin-johnsson-portfolio",
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
