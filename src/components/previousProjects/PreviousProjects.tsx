@@ -57,12 +57,10 @@ const Projects: FC = () => {
           <Box textAlign='center'>
             <BigHeading>Projects</BigHeading>
           </Box>
-
-          {projects.map((element, index) => (
-            <WrapItem>
+          {projects.map((project, index) => (
+            <WrapItem key={project.id}>
               <Box
                 boxShadow='0.14vh 0.14vw 1.98vh black '
-                key={index}
                 cursor='pointer'
                 onClick={() => {
                   handleExpandProject(index);
@@ -71,12 +69,13 @@ const Projects: FC = () => {
               >
                 <Flex direction='column' alignItems={'center'}>
                   <Box alignSelf='center'>
-                    <BodyText>{element.name}</BodyText>
-                    <SmallBodyText>{element.description}</SmallBodyText>
+                    <BodyText>{project.name}</BodyText>
+                    <SmallBodyText>{project.description}</SmallBodyText>
                     <Flex marginRight='1vw' flexWrap='wrap'>
-                      {element.tags.map((tag) => {
+                      {project.tags.map((tag) => {
                         return (
                           <Box
+                            key={tag.id}
                             max-w='5'
                             border='0.2rem solid #0b3d54'
                             color='#f5f0f0'
@@ -84,7 +83,7 @@ const Projects: FC = () => {
                             display='inline-block'
                             padding='0.2vw'
                           >
-                            {tag}
+                            {tag.tag}
                           </Box>
                         );
                       })}
@@ -96,7 +95,7 @@ const Projects: FC = () => {
                     marginTop='5vh'
                   >
                     <Img
-                      src={element.frontImage}
+                      src={project.frontImage}
                       alt='Screenshot of Insights application'
                       borderRadius='1.5vw'
                       width=''
@@ -120,8 +119,8 @@ const Projects: FC = () => {
             <BigHeading>Projects</BigHeading>
           </Box>
 
-          {projects.map((element, index) => (
-            <WrapItem>
+          {projects.map((project, index) => (
+            <WrapItem key={project.id}>
               <Box
                 boxShadow='0.14vh 0.14vw 1.98vh black '
                 key={index}
@@ -133,14 +132,15 @@ const Projects: FC = () => {
               >
                 <Flex direction='column' alignItems={'center'}>
                   <Box alignSelf='center'>
-                    <SmallScreenBodyText>{element.name}</SmallScreenBodyText>
+                    <SmallScreenBodyText>{project.name}</SmallScreenBodyText>
                     <SmallScreenSmallBodyText>
-                      {element.description}
+                      {project.description}
                     </SmallScreenSmallBodyText>
                     <Flex marginRight='1vw' flexWrap='wrap' marginTop='1.5vh'>
-                      {element.tags.map((tag) => {
+                      {project.tags.map((tag) => {
                         return (
                           <Box
+                            key={tag.id}
                             max-w='5'
                             border='0.2rem solid #0b3d54'
                             color='#f5f0f0'
@@ -149,7 +149,7 @@ const Projects: FC = () => {
                             display='inline-block'
                             padding='0.2vw'
                           >
-                            {tag}
+                            {tag.tag}
                           </Box>
                         );
                       })}
@@ -161,7 +161,7 @@ const Projects: FC = () => {
                     marginTop='5vh'
                   >
                     <Img
-                      src={element.frontImage}
+                      src={project.frontImage}
                       alt='Screenshot of Insights application'
                       borderRadius='1.5vw'
                       width='70vw'
