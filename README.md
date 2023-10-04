@@ -1,6 +1,76 @@
-## About
+# Portfolio
 
-This project was created for showcasing my skills, previous experience and to be able to get in contact with me all in one place on the web.
+Project for showcasing of my experience and to easily get in contact with me.
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Testing](#testing)
+4. [Acknowledgments](#acknowledgements)
+5. [Tech Stack](#tech-stack)
+6. [Contact Information](#contact-information)
+7. [Demo](#demo)
+
+## Prerequisites
+
+Node.js v18.14.2
+npm 9.8.1
+
+## Installation
+
+# 1.Clone the repository
+
+git clone https://github.com/Martin-Johnsson/martin-johnsson-portfolio
+
+# 2.Navigate to the project folder
+
+# 3.Install dependencies
+
+npm install
+
+# 4.Run application
+
+npm run dev
+
+Explain how to use the project and provide code examples or usage scenarios.
+
+Development
+Explain how to contribute to the project, coding standards, pull request guidelines, and development processes.
+
+## Testing
+
+Unit tests will be implemented in the future.
+
+## Acknowledgements
+
+@chakra-ui/react
+@emailjs/browser
+@emotion/react
+@emotion/styled
+@fortawesome/fontawesome-svg-core
+@fortawesome/free-regular-svg-icons
+@fortawesome/free-solid-svg-icons
+@fortawesome/react-fontawesome
+@reduxjs/toolkit
+babel-plugin-macros
+framer-motion
+react
+react-dom
+react-final-form
+react-redux
+@types/react
+@types/react-dom
+@typescript-eslint/eslint-plugin
+@typescript-eslint/parser
+@vitejs/plugin-react
+eslint
+eslint-plugin-react-hooks
+eslint-plugin-react-refresh
+gh-pages
+typescript
+vite
+react-lazy-load-image-component
 
 ## Tech stack
 
@@ -30,3 +100,15 @@ eslint-plugin-react-refresh 0.3.4
 gh-pages 5.0.0
 typescript 5.0.2
 vite 4.3.2
+react-lazy-load-image-component 1.6.0
+
+## Contact Information
+
+# Martin Johnsson
+
+https://github.com/Martin-Johnsson/
+maartinjohnsson@gmail.com
+
+## Demo
+
+https://martinjohnsson.dev/
