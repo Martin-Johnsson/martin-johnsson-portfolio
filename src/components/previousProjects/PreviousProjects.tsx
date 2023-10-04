@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import { Dispatch } from '@reduxjs/toolkit';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import {
   BigHeading,
@@ -17,9 +18,10 @@ import {
   SmallBodyText,
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
+  LazyLoadingImage,
 } from '../../styles/StyledComponents';
 import { projects } from '../../assets/projectsData';
-import ProjectsModal from './PreviousProjectsModal';
+import ProjectsModal from './Modal';
 import { RootState } from '../../redux/store';
 import { IProjectState } from '../../types/interfaces';
 
@@ -94,11 +96,11 @@ const Projects: FC = () => {
                     marginBottom='10vh'
                     marginTop='5vh'
                   >
-                    <Img
-                      src={project.frontImage}
+                    <LazyLoadingImage
+                      src={project.mainImage?.imageUrl}
                       alt='Screenshot of Insights application'
-                      borderRadius='1.5vw'
-                      width=''
+                      placeholderSrc={project.placeholderMainImage.imageUrl}
+                      effect='blur'
                     />
                   </Box>
                 </Flex>
@@ -159,11 +161,11 @@ const Projects: FC = () => {
                     justifyContent='center'
                     marginBottom='10vh'
                     marginTop='5vh'
+                    borderRadius='1.5vw'
                   >
                     <Img
-                      src={project.frontImage}
+                      src={project.mainImage?.imageUrl}
                       alt='Screenshot of Insights application'
-                      borderRadius='1.5vw'
                       width='70vw'
                     />
                   </Box>

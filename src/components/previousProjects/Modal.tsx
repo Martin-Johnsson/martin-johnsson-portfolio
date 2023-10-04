@@ -15,6 +15,7 @@ import {
   ModalText,
   ModalSecondHeading,
   StyledLink,
+  LazyLoadingModalImage,
 } from '../../styles/StyledComponents';
 import { projects } from '../../assets/projectsData';
 import { RootState } from '../../redux/store';
@@ -52,11 +53,14 @@ const ProjectsModal = ({
                 <Box w='100%'>
                   <ModalHeading>About {selectedProject.name}</ModalHeading>
                 </Box>
-                <Box w='40%' marginTop='3vw'>
-                  <Img
-                    src={selectedProject.modalImage}
+                <Box marginTop='3vw'>
+                  <LazyLoadingModalImage
+                    src={selectedProject.modalImage?.imageUrl}
                     alt='Screenshot of Insights application'
-                    borderRadius='1.5vw'
+                    placeholderSrc={
+                      selectedProject.modalPlaceholderImage?.imageUrl
+                    }
+                    effect='blur'
                   />
                 </Box>
                 <Box
@@ -100,7 +104,7 @@ const ProjectsModal = ({
                   <Flex direction='row'>
                     <Box marginLeft='3vw'>
                       <Img
-                        src={selectedProject.modalImage}
+                        src={selectedProject.modalImage?.imageUrl}
                         alt='Screenshot of Insights application'
                         borderRadius='1.5vw'
                       />

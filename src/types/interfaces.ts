@@ -12,13 +12,20 @@ export interface ITags {
   tag: string;
 }
 
+export interface IiMage {
+  imageUrl: string;
+  alt: string;
+}
+
 export interface IProject {
   id: number;
-  frontImage?: string;
-  modalImage?: string;
   name: string;
   about: string;
   description?: string;
+  placeholderMainImage: IiMage;
+  mainImage?: IiMage;
+  modalPlaceholderImage: IiMage;
+  modalImage?: IiMage;
   tags: ITags[];
   links?: {
     github?: string | null;
