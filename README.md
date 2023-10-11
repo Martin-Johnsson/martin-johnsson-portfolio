@@ -19,24 +19,19 @@ npm 9.8.1
 
 ## Installation
 
-# 1.Clone the repository
+# 1. Clone the repository
 
 git clone https://github.com/Martin-Johnsson/martin-johnsson-portfolio
 
-# 2.Navigate to the project folder
+# 2. Navigate to the project folder
 
-# 3.Install dependencies
+# 3. Install dependencies
 
 npm install
 
 # 4.Run application
 
 npm run dev
-
-Explain how to use the project and provide code examples or usage scenarios.
-
-Development
-Explain how to contribute to the project, coding standards, pull request guidelines, and development processes.
 
 ## Testing
 
