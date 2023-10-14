@@ -163,10 +163,10 @@ const Projects: FC = () => {
                     marginTop='5vh'
                     borderRadius='1.5vw'
                   >
-                    <Img
+                    <LazyLoadingImage
                       src={project.mainImage?.imageUrl}
-                      alt='Screenshot of Insights application'
-                      width='70vw'
+                      alt={project.mainImage?.alt}
+                      width='50vw'
                     />
                   </Box>
                 </Flex>
