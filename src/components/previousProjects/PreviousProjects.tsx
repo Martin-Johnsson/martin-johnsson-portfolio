@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   Box,
   Flex,
-  Img,
   Wrap,
   WrapItem,
   useBreakpointValue,
