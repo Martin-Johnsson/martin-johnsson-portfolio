@@ -114,9 +114,7 @@ const ContactForm: FC = () => {
           <BigHeading>I'll get back to you as soon as possible.</BigHeading>
         </Box>
       )}
-      {contactState.emailSubmitting == true && (
-        <BigHeading>Sending...</BigHeading>
-      )}
+      {contactState.emailSubmitting && <BigHeading>Sending...</BigHeading>}
     </ContactSection>
   );
 };
