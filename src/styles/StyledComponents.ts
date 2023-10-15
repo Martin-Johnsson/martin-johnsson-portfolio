@@ -44,6 +44,19 @@ export const ThirdSizeHeading = styled.h3`
   }
 `;
 
+export const NavigateBackText = styled.h3`
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1vh;
+  font-weight: 800;
+  width: 30vw;
+  color: #f79d14;
+  &:hover {
+    cursor: pointer;
+    color: #483ab0;
+  }
+`;
+
 export const BodyText = styled.h3`
   font-size: 1.5rem;
   display: block;
@@ -198,6 +211,7 @@ export const StyledLink = styled.span`
 
 export const ProjectsSection = styled.section`
   margin-top: 15vh;
+  margin-bottom: 15vh;
 `;
 
 export const LazyLoadingImage = styled(LazyLoadImage)`

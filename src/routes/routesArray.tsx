@@ -4,6 +4,7 @@ import BaseLayout from '../layout/BaseLayout';
 import Contact from '../components/ContactForm';
 import Projects from '../components/previousProjects/PreviousProjects';
 import Landing from './pages/Landing';
+import NotFound from './pages/NotFound';
 
 export const routes: RouteObject[] = [
   {
@@ -23,6 +24,11 @@ export const routes: RouteObject[] = [
         path: 'contact',
         index: true,
         element: <Contact />,
+      },
+      {
+        path: '*',
+        index: true,
+        element: <NotFound />,
       },
     ],
   },
