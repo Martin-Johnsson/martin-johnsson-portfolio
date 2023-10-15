@@ -1,13 +1,11 @@
-import { FormEvent, RefObject, useRef } from 'react';
+import { FormEvent, RefObject, useRef, FC } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import { Form, Field } from 'react-final-form';
 import emailjs from '@emailjs/browser';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
-import { FC } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from '@reduxjs/toolkit';
 
-import { IContactState } from '@/types/interfaces';
+import { IContactState } from '../types/interfaces';
 import {
   BigHeading,
   ContactSection,
