@@ -1,12 +1,13 @@
+import { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import {
   BigHeading,
-  BodyText,
   NavigateBackText,
   PortfolioHomeContainer,
 } from '../..//styles/StyledComponents';
-import { FC } from 'react';
 import { MediumHeading } from '../../styles/StyledComponents';
-import { useNavigate } from 'react-router-dom';
+
 const NotFound: FC = () => {
   const navigate = useNavigate();
 
