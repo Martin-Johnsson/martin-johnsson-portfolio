@@ -111,7 +111,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export const HeaderName = styled.h1`
+export const HeaderLayoutHomeNavigationTabText = styled.h1`
   font-size: 1.3rem;
   font-weight: 800;
   color: #f5f0f0;
@@ -120,7 +120,7 @@ export const HeaderName = styled.h1`
   }
 `;
 
-export const NameHeader = styled.h1`
+export const HeaderLayoutSecondaryNavigationTabText = styled.h1`
   font-size: 1rem;
   font-weight: 800;
   color: #f5f0f0;

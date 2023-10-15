@@ -1,11 +1,11 @@
 import { Box, Flex, Menu } from '@chakra-ui/react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import {
   StyledHeaderMenuItem,
   StyledNavLink,
-  HeaderName,
-  NameHeader,
+  HeaderLayoutHomeNavigationTabText,
+  HeaderLayoutSecondaryNavigationTabText,
 } from '../styles/StyledComponents';
 
 const HeaderLayout = () => {
@@ -30,23 +30,43 @@ const HeaderLayout = () => {
               }}
               cursor='pointer'
             >
-              <NavLink to='/' onClick={scrollToTop}>
-                <NameHeader>MARTIN JOHNSSON</NameHeader>
-              </NavLink>
+              <StyledHeaderMenuItem>
+                <StyledNavLink
+                  aria-roledescription='Navigation to home page'
+                  to='/'
+                  onClick={scrollToTop}
+                >
+                  <HeaderLayoutHomeNavigationTabText>
+                    MARTIN JOHNSSON
+                  </HeaderLayoutHomeNavigationTabText>
+                </StyledNavLink>
+              </StyledHeaderMenuItem>
             </Box>
             <Box marginLeft='10vw'>
-              <StyledNavLink to='/projects' onClick={scrollToTop}>
-                <StyledHeaderMenuItem>
-                  <HeaderName>Projects</HeaderName>
-                </StyledHeaderMenuItem>
-              </StyledNavLink>
+              <StyledHeaderMenuItem>
+                <StyledNavLink
+                  aria-roledescription='Navigate to projects page'
+                  to='/projects'
+                  onClick={scrollToTop}
+                >
+                  <HeaderLayoutSecondaryNavigationTabText>
+                    Projects
+                  </HeaderLayoutSecondaryNavigationTabText>
+                </StyledNavLink>
+              </StyledHeaderMenuItem>
             </Box>
             <Box marginLeft='10vw'>
-              <StyledNavLink to='/contact' onClick={scrollToTop}>
-                <StyledHeaderMenuItem>
-                  <HeaderName>Contact</HeaderName>
-                </StyledHeaderMenuItem>
-              </StyledNavLink>
+              <StyledHeaderMenuItem>
+                <StyledNavLink
+                  aria-roledescription='Navigate to Contact page'
+                  to='/contact'
+                  onClick={scrollToTop}
+                >
+                  <HeaderLayoutSecondaryNavigationTabText>
+                    Contact
+                  </HeaderLayoutSecondaryNavigationTabText>
+                </StyledNavLink>
+              </StyledHeaderMenuItem>
             </Box>
           </Flex>
         </Menu>
