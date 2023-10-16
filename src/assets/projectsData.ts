@@ -5,7 +5,7 @@ export const projects: IProject[] = [
     id: 1,
     name: 'Insights',
     description: '- Data analysis and management tool',
-    about: `Project during my second internship at Smart Refill. The aim of the project was to create an data analysis and management tool. We were mulitple colleagues responsible for the project. My team consisted of: another frontend developer, two UX, a Teach Lead, one senior frontend developer, one scrum master and a product owner.`,
+    modalAbout: `Project during my second internship at Smart Refill. The aim of the project was to create an data analysis and management tool. We were mulitple colleagues responsible for the project. My team consisted of: another frontend developer, two UX, a Teach Lead, one senior frontend developer, one scrum master and a product owner.`,
     placeholderMainImage: {
       imageUrl: 'images/placeholders/smartRefillPlaceholder.jpg',
       alt: 'Placeholder UI in insights application',
@@ -22,7 +22,6 @@ export const projects: IProject[] = [
       imageUrl: 'images/modals/insightsModal.png',
       alt: 'UI in insights',
     },
-
     tags: [
       { id: 1, tag: 'TypeScript' },
       { id: 2, tag: 'React' },
@@ -38,9 +37,44 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
+    name: 'Portfolio',
+    description: '- This website!',
+    modalAbout: `Project for showcasing my experience and easily get in contact with me.`,
+    placeholderMainImage: {
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'Placeholder UI in insights application',
+    },
+    mainImage: {
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'Placeholder for Smart Refills logo',
+    },
+    modalPlaceholderImage: {
+      imageUrl: 'images/modals/placeholders/insights.webp',
+      alt: 'Placeholder for UI in insights',
+    },
+    modalImage: {
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'UI in Portfolio',
+    },
+
+    tags: [
+      { id: 2, tag: 'React' },
+      { id: 1, tag: 'TypeScript' },
+      { id: 3, tag: 'Redux' },
+      { id: 4, tag: 'Chakra UI' },
+      { id: 10, tag: 'Emotion.js' },
+      { id: 9, tag: 'Git' },
+    ],
+    links: {
+      github: 'https://github.com/Martin-Johnsson',
+      liveExample: 'https://martinjohnsson.dev/',
+    },
+  },
+  {
+    id: 3,
     name: 'Times',
     description: '- Time management system',
-    about: `I maintained and further developed a time management system during my first intern period at Knowit. I increased efficiency through functions and UX focused UI to new feature.`,
+    modalAbout: `I maintained and further developed a time management system during my first intern period at Knowit. I increased efficiency through functions and UX focused UI to new feature.`,
     placeholderMainImage: {
       imageUrl: 'knowitPlaceholder.jpg',
       alt: 'Placeholder for Knowits logo',
@@ -68,11 +102,11 @@ export const projects: IProject[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: 'E-wallet',
     description:
       '- An digital wallet for credit cards (In progress to be migrated to Vite, TypeScript, React-router v.6, improve Redux structure and use emotion.js)',
-    about: `The end goal was to let the user store, create and delete credit cards.`,
+    modalAbout: `The end goal was to let the user store, create and delete credit cards.`,
     placeholderMainImage: {
       imageUrl: 'images/placeholders/eWalletPlaceholder.jpg',
       alt: 'Placeholder picture from UI of Ewallet application',
