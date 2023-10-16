@@ -29,6 +29,7 @@ const HeaderLayout = () => {
                 scrollToTop();
               }}
               cursor='pointer'
+              w='40vw'
             >
               <StyledHeaderMenuItem>
                 <StyledNavLink
@@ -42,7 +43,7 @@ const HeaderLayout = () => {
                 </StyledNavLink>
               </StyledHeaderMenuItem>
             </Box>
-            <Box marginLeft='10vw'>
+            <Box w='30vw'>
               <StyledHeaderMenuItem>
                 <StyledNavLink
                   aria-roledescription='Navigate to projects page'
@@ -55,7 +56,7 @@ const HeaderLayout = () => {
                 </StyledNavLink>
               </StyledHeaderMenuItem>
             </Box>
-            <Box marginLeft='10vw'>
+            <Box w='30vw'>
               <StyledHeaderMenuItem>
                 <StyledNavLink
                   aria-roledescription='Navigate to Contact page'
