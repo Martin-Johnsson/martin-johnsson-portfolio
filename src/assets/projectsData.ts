@@ -45,7 +45,7 @@ export const projects: IProject[] = [
       alt: 'Placeholder UI in insights application',
     },
     mainImage: {
-      imageUrl: 'images/briefcase-solid.svg',
+      imageUrl: '/images/briefcase-solid.svg',
       alt: 'Placeholder for Smart Refills logo',
     },
     modalPlaceholderImage: {
@@ -53,7 +53,7 @@ export const projects: IProject[] = [
       alt: 'Placeholder for UI in insights',
     },
     modalImage: {
-      imageUrl: 'images/briefcase-solid.svg',
+      imageUrl: '/images/briefcase-solid.svg',
       alt: 'UI in Portfolio',
     },
 
