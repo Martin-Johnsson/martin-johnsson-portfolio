@@ -45,7 +45,7 @@ export const projects: IProject[] = [
       alt: 'Placeholder UI in insights application',
     },
     mainImage: {
-      imageUrl: '/images/briefcase-solid.svg',
+      imageUrl: 'images/briefcase-solid.svg',
       alt: 'Placeholder for Smart Refills logo',
     },
     modalPlaceholderImage: {
@@ -53,7 +53,7 @@ export const projects: IProject[] = [
       alt: 'Placeholder for UI in insights',
     },
     modalImage: {
-      imageUrl: '/images/briefcase-solid.svg',
+      imageUrl: 'images/briefcase-solid.svg',
       alt: 'UI in Portfolio',
     },
 
@@ -103,6 +103,35 @@ export const projects: IProject[] = [
   },
   {
     id: 4,
+    name: 'Highscore',
+    description: '- A Fullstack project with Node.js',
+    modalAbout: ``,
+    placeholderMainImage: {
+      imageUrl: 'images/placeholders/eWalletPlaceholder.jpg',
+      alt: 'Placeholder picture from UI of Highscore application',
+    },
+    mainImage: {
+      imageUrl: 'images/front/highscoreFront.jpg',
+      alt: 'Picture of UI of Ewallet application',
+    },
+    modalPlaceholderImage: {
+      imageUrl: 'eWalletl.webp',
+      alt: 'Placeholder picture of Highscore Modal',
+    },
+    modalImage: {
+      imageUrl: 'images/modals/eWalletModal.png',
+      alt: 'Another picture of UI of HighScore application',
+    },
+    tags: [
+      { id: 1, tag: 'Node.js' },
+      { id: 2, tag: 'JavaScript' },
+    ],
+    links: {
+      github: 'https://github.com/Martin-Johnsson/highscore',
+    },
+  },
+  {
+    id: 5,
     name: 'E-wallet',
     description:
       '- An digital wallet for credit cards (In progress to be migrated to Vite, TypeScript, React-router v.6, improve Redux structure and use emotion.js)',
