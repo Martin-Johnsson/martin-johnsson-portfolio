@@ -25,8 +25,8 @@ const BigScreenSize = () => {
         <ModalHeading>{selectedProject.name}</ModalHeading>
       </Box>
       <Box>
-        <Flex direction='row'>
-          <Box marginLeft='3vw'>
+        <Flex direction='row' justifyContent='center'>
+          <Box>
             <LazyLoadingModalImage
               src={selectedProject.modalImage?.imageUrl}
               alt={selectedProject.modalImage?.alt}
@@ -34,12 +34,7 @@ const BigScreenSize = () => {
               effect='blur'
             />
           </Box>
-          <Box
-            marginLeft='2vw'
-            borderLeft='0.5vw solid #15181a'
-            maxW='60vw'
-            maxH='98%'
-          >
+          <Box borderLeft='0.5vw solid #15181a' maxW='60vw' maxH='98%'>
             <ModalSecondHeading>About</ModalSecondHeading>
             <ModalText>{selectedProject.modalAbout}</ModalText>
           </Box>

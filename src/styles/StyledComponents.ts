@@ -216,12 +216,12 @@ export const ProjectsSection = styled.section`
 
 export const LazyLoadingImage = styled(LazyLoadImage)`
   border-radius: 1.5vw;
-  width: 100%;
-  height: 100%;
+  width: 20vw;
+  height: 30vh;
 `;
 
 export const LazyLoadingModalImage = styled(LazyLoadImage)`
   border-radius: 1.5vw;
-  width: 40%;
-  height: 40%;
+  width: 70%;
+  height: 70%;
 `;
