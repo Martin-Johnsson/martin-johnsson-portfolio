@@ -125,7 +125,7 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const HeaderLayoutHomeNavigationTabText = styled.h1`
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #f5f0f0;
   &:hover {
@@ -134,7 +134,7 @@ export const HeaderLayoutHomeNavigationTabText = styled.h1`
 `;
 
 export const HeaderLayoutSecondaryNavigationTabText = styled.h1`
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #f5f0f0;
   margin-left: 0.5vh;
