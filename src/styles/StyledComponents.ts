@@ -217,7 +217,7 @@ export const ProjectsSection = styled.section`
 export const LazyLoadingImage = styled(LazyLoadImage)`
   border-radius: 1.5vw;
   width: 20vw;
-  height: 30vh;
+  height: 40%;
 `;
 
 export const LazyLoadingModalImage = styled(LazyLoadImage)`
