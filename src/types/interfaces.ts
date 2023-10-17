@@ -20,7 +20,7 @@ export interface IiMage {
 export interface IProject {
   id: number;
   name: string;
-  about: string;
+  modalAbout: string;
   description?: string;
   placeholderMainImage: IiMage;
   mainImage?: IiMage;

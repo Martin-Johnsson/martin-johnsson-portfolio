@@ -61,7 +61,7 @@ const Projects: FC = () => {
           {projects.map((project, index) => (
             <WrapItem key={project.id}>
               <Box
-                boxShadow='0.14vh 0.14vw 1.98vh black '
+                boxShadow='0.14vh 0.14vw 1.98vh black'
                 cursor='pointer'
                 onClick={() => {
                   handleExpandProject(index);
