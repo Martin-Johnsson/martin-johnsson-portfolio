@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { PortfolioHomeContainer } from '../../components/introduction/StyledComponentsIntroduction';
 import {
   BigHeading,
+  MediumHeading,
   NavigateBackText,
-  PortfolioHomeContainer,
 } from '../../globalStyles/GlobalStyledComponents';
-import { MediumHeading } from '../../globalStyles/GlobalStyledComponents';
 
 const NotFound: FC = () => {
   const navigate = useNavigate();
