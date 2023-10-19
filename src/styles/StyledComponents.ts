@@ -2,6 +2,15 @@ import { Box, MenuItem } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
+import { theme } from './theme';
+
+const {
+  textColor,
+  primaryAccentColor,
+  secondaryAccentColor,
+  secondaryBackgroundColor,
+  tertiaryBackgroundColor,
+} = theme;
 
 export const PortfolioHomeContainer = styled.section`
   display: flex;
@@ -17,7 +26,7 @@ export const BigHeading = styled.h1`
   display: block;
   font-weight: 800;
   width: 100vw;
-  color: #f5f0f0;
+  color: ${textColor};
   margin-bottom: 1vh;
 `;
 
@@ -27,7 +36,7 @@ export const MediumHeading = styled.h2`
   margin-bottom: 1vh;
   font-weight: 600;
   width: 100vw;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const ThirdSizeHeading = styled.h3`
@@ -36,11 +45,11 @@ export const ThirdSizeHeading = styled.h3`
   margin-bottom: 1vh;
   font-weight: 800;
   width: 30vw;
-  color: #f79d14;
+  color: ${secondaryAccentColor};
   text-decoration: underline;
   &:hover {
     cursor: pointer;
-    color: #483ab0;
+    color: ${primaryAccentColor};
   }
 `;
 
@@ -50,10 +59,10 @@ export const NavigateBackText = styled.h3`
   margin-bottom: 1vh;
   font-weight: 800;
   width: 30vw;
-  color: #f79d14;
+  color: ${secondaryAccentColor};
   &:hover {
     cursor: pointer;
-    color: #483ab0;
+    color: ${primaryAccentColor};
   }
 `;
 
@@ -62,14 +71,14 @@ export const BodyText = styled.h3`
   display: block;
   font-weight: 600;
   width: 30vw;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const SmallBodyText = styled.h4`
   font-size: 1rem;
   display: block;
   font-weight: 600;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const SmallScreenBodyText = styled.h3`
@@ -77,66 +86,60 @@ export const SmallScreenBodyText = styled.h3`
   display: block;
   font-weight: 600;
   width: 30vw;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const SmallScreenSmallBodyText = styled.h4`
   font-size: 1rem;
   display: block;
   font-weight: 600;
-  color: #f5f0f0;
+  color: #${textColor};
   margin-top: 1vh;
   margin-left: 2vh;
   margin-bottom: 2.5vh;
 `;
 
 export const ToProjectsButton = styled.button`
-  background-color: #313031;
+  background-color: ${secondaryBackgroundColor};
   color: #f5f0f0;
-  border: 0.2vw solid #f5f0f0;
+  border: 0.2vw solid ${textColor};
   text-align: center;
   margin-top: 1vh;
   padding: 8vh 4vw;
   font-size: 1.5rem;
   font-weight: 800;
   &:hover {
-    border: 0.2vw solid #15181a;
-    background-color: #313031;
-    color: #483ab0;
+    border: none;
+    background-color: ${secondaryBackgroundColor};
+    color: ${primaryAccentColor};
     cursor: pointer;
   }
   &:active {
-    background-color: #313031;
     border: none;
   }
 `;
 
 export const StyledHeaderMenuItem = styled(MenuItem)`
   background-color: inherit;
-  &:hover {
-  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
   &.active {
-    background-color: #483ab0;
-    color: #f5f0f0;
+    background-color: ${primaryAccentColor};
+    color: ${textColor};
   }
 `;
 
 export const HeaderLayoutHomeNavigationTabText = styled.h1`
   font-size: 1.6rem;
   font-weight: 800;
-  color: #f5f0f0;
-  &:hover {
-    color: #f5f0f0f;
-  }
+  color: ${textColor};
 `;
 
 export const HeaderLayoutSecondaryNavigationTabText = styled.h1`
   font-size: 1.4rem;
   font-weight: 800;
-  color: #f5f0f0;
+  color: ${textColor};
   margin-left: 0.5vh;
 `;
 
@@ -154,58 +157,58 @@ export const FormHeading = styled.h1`
   margin-top: 4vh;
   margin-bottom: 4vh;
   font-weight: 800;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const ModalHeading = styled.h1`
   font-size: 1.2rem;
   font-weight: 800;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const ModalSecondHeading = styled.h2`
   font-size: 2rem;
   font-weight: 800;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const ModalText = styled.span`
   font-size: 1rem;
   font-weight: 700;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const SmallLinksText = styled.span`
   font-size: 0.7rem;
   margin-left: 1vw;
   font-weight: 700;
-  color: #f5f0f0;
+  color: ${textColor};
 `;
 
 export const CustomInput = styled.input`
   background-color: #313031;
-  color: #f5f0f0ff;
-  border: 0.2vw solid #f5f0f0ff;
+  color: ${textColor};
+  border: 0.2vw solid ${textColor};
   text-align: center;
   padding: 2vh 10vw;
   font-size: 2vw;
   font-weight: 800;
   &:hover {
-    border: 0.2vw solid #15181a;
-    background-color: #313031;
-    color: #483ab0;
+    border: none;
+    background-color: ${secondaryBackgroundColor};
+    color: ${primaryAccentColor};
     cursor: pointer;
   }
   &:active {
-    background-color: #313031;
+    background-color: ${secondaryBackgroundColor};
     border: none;
   }
 `;
 
-export const StyledLink = styled.span`
-  color: #f79d14;
+export const StyledModalLink = styled.span`
+  color: ${secondaryAccentColor};
   &:hover {
-    color: #483ab0;
+    color: ${primaryAccentColor};
   }
 `;
 
@@ -227,10 +230,10 @@ export const LazyLoadingModalImage = styled(LazyLoadImage)`
 `;
 
 export const ProjectBox = styled(Box)`
-  box-shadow: 0.14vh 0.14vw 1.98vh black;
+  box-shadow: 0.14vh 0.14vw 1.98vh ${tertiaryBackgroundColor};
   width: 90vw;
   cursor: pointer;
   &:hover {
-    border: 0.2rem solid #f79d14;
+    border: 0.2rem solid ${secondaryAccentColor};
   }
 `;
