@@ -175,28 +175,8 @@ export const StyledModalLink = styled.span`
   }
 `;
 
-export const ProjectsSection = styled.section`
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-`;
-
-export const LazyLoadingImage = styled(LazyLoadImage)`
-  border-radius: 1.5vw;
-  width: 20vw;
-  height: 40%;
-`;
-
 export const LazyLoadingModalImage = styled(LazyLoadImage)`
   border-radius: 1.5vw;
   width: 70%;
   height: 70%;
-`;
-
-export const ProjectBox = styled(Box)`
-  box-shadow: 0.14vh 0.14vw 1.98vh ${tertiaryBackgroundColor};
-  width: 90vw;
-  cursor: pointer;
-  &:hover {
-    border: 0.2rem solid ${secondaryAccentColor};
-  }
 `;
