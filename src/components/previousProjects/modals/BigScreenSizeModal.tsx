@@ -6,12 +6,21 @@ import {
   ModalHeading,
   ModalText,
   ModalSecondHeading,
-  StyledLink,
+  StyledModalLink,
   LazyLoadingModalImage,
 } from '../../../styles/StyledComponents';
 import { projects } from '../../../assets/projectsData';
 import { RootState } from '../../../redux/store';
 import { IProject, IProjectState } from '../../../types/interfaces';
+import { theme } from '../../../styles/theme';
+
+const {
+  textColor,
+  primaryAccentColor,
+  secondaryAccentColor,
+  secondaryBackgroundColor,
+  tertiaryBackgroundColor,
+} = theme;
 
 const BigScreenSize = () => {
   const projectsState: IProjectState = useSelector(
@@ -34,7 +43,11 @@ const BigScreenSize = () => {
               effect='blur'
             />
           </Box>
-          <Box borderLeft='0.5vw solid #15181a' maxW='60vw' maxH='98%'>
+          <Box
+            borderLeft='0.5vw solid ${primaryBackgroundColor}'
+            maxW='60vw'
+            maxH='98%'
+          >
             <ModalSecondHeading>About</ModalSecondHeading>
             <ModalText>{selectedProject.modalAbout}</ModalText>
           </Box>
@@ -44,19 +57,24 @@ const BigScreenSize = () => {
             {selectedProject.links?.github && (
               <Link href={selectedProject.links.github} isExternal>
                 <i className='fa-solid fa-code'></i>
-                <StyledLink> Checkout the code on GitHub </StyledLink>
+                <StyledModalLink> Checkout the code on GitHub </StyledModalLink>
               </Link>
             )}
             {selectedProject.links?.liveExample && (
               <Link href={selectedProject.links.liveExample} isExternal>
                 <i className='fa-solid fa-laptop-code'></i>
-                <StyledLink> Checkout live on CodeSandbox </StyledLink>
+                <StyledModalLink>
+                  {' '}
+                  Checkout live on CodeSandbox{' '}
+                </StyledModalLink>
               </Link>
             )}
             {!selectedProject.links?.github && (
               <Box>
                 <i className='fa-solid fa-code'></i>
-                <StyledLink>No code available. NDA Protected. </StyledLink>
+                <StyledModalLink>
+                  No code available. NDA Protected.{' '}
+                </StyledModalLink>
               </Box>
             )}
           </Box>

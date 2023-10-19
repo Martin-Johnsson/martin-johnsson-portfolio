@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import {
   ModalHeading,
   ModalText,
-  StyledLink,
+  StyledModalLink,
   LazyLoadingModalImage,
 } from '../../../styles/StyledComponents';
 import { projects } from '../../../assets/projectsData';
@@ -44,21 +44,23 @@ const SmallScreenSize = () => {
           {selectedProject.links?.github && (
             <Link href={selectedProject.links.github} isExternal>
               <i className='fa-solid fa-code'></i>
-              <StyledLink> Checkout the code on GitHub </StyledLink>
+              <StyledModalLink> Checkout the code on GitHub </StyledModalLink>
             </Link>
           )}
           {selectedProject.links?.liveExample && (
             <Box width={'100vw'} height={'100vh'}>
               <Link href={selectedProject.links.liveExample} isExternal>
                 <i className='fa-solid fa-laptop-code'></i>
-                <StyledLink> Checkout live! </StyledLink>
+                <StyledModalLink> Checkout live! </StyledModalLink>
               </Link>
             </Box>
           )}
           {!selectedProject.links?.github && (
             <Box>
               <i className='fa-solid fa-code'></i>
-              <StyledLink>No code available. NDA Protected. </StyledLink>
+              <StyledModalLink>
+                No code available. NDA Protected.{' '}
+              </StyledModalLink>
             </Box>
           )}
         </Box>

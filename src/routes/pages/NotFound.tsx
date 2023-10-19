@@ -5,7 +5,7 @@ import {
   BigHeading,
   NavigateBackText,
   PortfolioHomeContainer,
-} from '../..//styles/StyledComponents';
+} from '../../styles/StyledComponents';
 import { MediumHeading } from '../../styles/StyledComponents';
 
 const NotFound: FC = () => {
