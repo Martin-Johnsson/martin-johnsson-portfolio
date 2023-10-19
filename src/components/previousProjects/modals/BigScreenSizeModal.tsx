@@ -12,15 +12,6 @@ import {
 import { projects } from '../../../assets/projectsData';
 import { RootState } from '../../../redux/store';
 import { IProject, IProjectState } from '../../../types/interfaces';
-import { theme } from '../../../styles/theme';
-
-const {
-  textColor,
-  primaryAccentColor,
-  secondaryAccentColor,
-  secondaryBackgroundColor,
-  tertiaryBackgroundColor,
-} = theme;
 
 const BigScreenSize = () => {
   const projectsState: IProjectState = useSelector(
