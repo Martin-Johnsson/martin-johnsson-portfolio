@@ -11,14 +11,16 @@ import { Dispatch } from '@reduxjs/toolkit';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import {
+  ProjectsSection,
+  LazyLoadingImage,
+  ProjectBox,
+} from './StyledComponentsPreviousProjects.tsx';
+import {
   BigHeading,
   BodyText,
-  ProjectsSection,
   SmallBodyText,
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
-  LazyLoadingImage,
-  ProjectBox,
 } from '../../globalStyles/GlobalStyledComponents';
 import { projects } from '../../assets/projectsData';
 import ProjectsModal from './Modal';
