@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { theme } from '../../globalStyles/theme.ts';
+import { theme } from 'src/globalStyles/theme.ts';
 
 const { textColor, primaryAccentColor, secondaryBackgroundColor } = theme;
 

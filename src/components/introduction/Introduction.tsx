@@ -6,11 +6,11 @@ import {
   BigHeading,
   MediumHeading,
   ThirdSizeHeading,
-} from '../../globalStyles/GlobalStyledComponents.ts';
+} from 'src/globalStyles/GlobalStyledComponents.ts';
 import {
   PortfolioHomeContainer,
   ToProjectsButton,
-} from './StyledComponentsIntroduction.tsx';
+} from 'src/components/introduction/StyledComponentsIntroduction.tsx';
 
 const Introduction: FC = () => {
   const navigate: NavigateFunction = useNavigate();

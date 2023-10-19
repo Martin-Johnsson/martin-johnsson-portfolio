@@ -6,7 +6,7 @@ import {
   StyledNavLink,
   HeaderLayoutHomeNavigationTabText,
   HeaderLayoutSecondaryNavigationTabText,
-} from '../globalStyles/GlobalStyledComponents';
+} from 'src/globalStyles/GlobalStyledComponents';
 
 const HeaderLayout = () => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from '../../../globalStyles/theme';
+import { theme } from 'src/globalStyles/theme';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const { textColor, primaryAccentColor, secondaryAccentColor } = theme;

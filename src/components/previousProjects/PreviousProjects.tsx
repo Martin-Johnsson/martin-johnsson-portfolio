@@ -22,10 +22,10 @@ import {
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
 } from '../../globalStyles/GlobalStyledComponents';
-import { projects } from '../../assets/projectsData';
+import { projects } from 'src/assets/projectsData';
 import ProjectsModal from './Modal';
-import { RootState } from '../../redux/store';
-import { IProjectState } from '../../types/interfaces';
+import { RootState } from 'src/redux/store';
+import { IProjectState } from 'src/types/interfaces';
 
 const Projects: FC = () => {
   const dispatch: Dispatch = useDispatch();

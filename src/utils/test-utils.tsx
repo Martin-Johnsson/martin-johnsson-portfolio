@@ -1,8 +1,9 @@
 import { ReactElement } from 'react';
-import store from '../redux/store';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import { RenderOptions, render } from '@testing-library/react';
+
+import store from 'src/redux/store';
 
 const testWrapper = ({ children }: { children: React.ReactNode }) => {
   return (

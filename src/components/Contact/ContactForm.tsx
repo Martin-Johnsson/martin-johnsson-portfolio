@@ -5,18 +5,18 @@ import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from '@reduxjs/toolkit';
 
-import { IContactState } from '../../types/interfaces';
+import { IContactState } from '/src/types/interfaces';
 import {
   BigHeading,
   MediumHeading,
-} from '../../globalStyles/GlobalStyledComponents.ts';
+} from '/src/globalStyles/GlobalStyledComponents';
 import {
   ContactSection,
   CustomInput,
   FormHeading,
-} from './StyledContactComponents.tsx';
+} from '/src/components/Contact/StyledContactComponents.tsx';
 
-import { RootState } from '../../redux/store';
+import { RootState } from 'src/redux/store';
 
 const ContactForm: FC = () => {
   const form: RefObject<any> = useRef(null);

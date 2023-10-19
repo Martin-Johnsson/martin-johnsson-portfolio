@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { PortfolioHomeContainer } from '../../components/introduction/StyledComponentsIntroduction';
+import { PortfolioHomeContainer } from 'src/components/introduction/StyledComponentsIntroduction';
 import {
   BigHeading,
   MediumHeading,

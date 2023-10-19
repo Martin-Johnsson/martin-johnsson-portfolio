@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import PreviousProjects from '../../components/previousProjects/PreviousProjects';
-import '../styles/index.css';
+import PreviousProjects from 'src/components/previousProjects/PreviousProjects';
+import 'src/styles/index.css';
 
 const Projects: FC = () => {
   return (
