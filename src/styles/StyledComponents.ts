@@ -1,4 +1,4 @@
-import { MenuItem } from '@chakra-ui/react';
+import { Box, MenuItem, WrapItem } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
@@ -224,4 +224,13 @@ export const LazyLoadingModalImage = styled(LazyLoadImage)`
   border-radius: 1.5vw;
   width: 70%;
   height: 70%;
+`;
+
+export const ProjectBox = styled(Box)`
+  box-shadow: 0.14vh 0.14vw 1.98vh black;
+  width: 90vw;
+  cursor: pointer;
+  &:hover {
+    border: 0.2rem solid #f79d14;
+  }
 `;

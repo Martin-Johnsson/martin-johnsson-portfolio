@@ -18,6 +18,7 @@ import {
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
   LazyLoadingImage,
+  ProjectBox,
 } from '../../styles/StyledComponents';
 import { projects } from '../../assets/projectsData';
 import ProjectsModal from './Modal';
@@ -60,13 +61,10 @@ const Projects: FC = () => {
           </Box>
           {projects.map((project, index) => (
             <WrapItem key={project.id}>
-              <Box
-                boxShadow='0.14vh 0.14vw 1.98vh black'
-                cursor='pointer'
+              <ProjectBox
                 onClick={() => {
                   handleExpandProject(index);
                 }}
-                w='90vw'
               >
                 <Flex direction='column' alignItems={'center'}>
                   <Box alignSelf='center'>
@@ -103,7 +101,7 @@ const Projects: FC = () => {
                     />
                   </Box>
                 </Flex>
-              </Box>
+              </ProjectBox>
             </WrapItem>
           ))}
         </Wrap>
