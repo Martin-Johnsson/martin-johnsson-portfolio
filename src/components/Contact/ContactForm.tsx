@@ -8,10 +8,12 @@ import { Dispatch } from '@reduxjs/toolkit';
 import { IContactState } from '../../types/interfaces';
 import {
   BigHeading,
+  MediumHeading,
+} from '../../globalStyles/GlobalStyledComponents.ts';
+import {
   ContactSection,
   CustomInput,
   FormHeading,
-  MediumHeading,
 } from './StyledContactComponents.tsx';
 
 import { RootState } from '../../redux/store';
