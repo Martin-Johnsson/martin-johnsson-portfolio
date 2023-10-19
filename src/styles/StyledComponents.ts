@@ -1,4 +1,4 @@
-import { Box, MenuItem, WrapItem } from '@chakra-ui/react';
+import { Box, MenuItem } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
