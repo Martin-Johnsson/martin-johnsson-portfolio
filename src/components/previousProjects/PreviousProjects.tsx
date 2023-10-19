@@ -124,7 +124,7 @@ const Projects: FC = () => {
             <WrapItem key={project.id}>
               <Box
                 boxShadow='0.14vh 0.14vw 1.98vh black '
-                key={index}
+                key={project.id}
                 cursor='pointer'
                 onClick={() => {
                   handleExpandProject(index);
