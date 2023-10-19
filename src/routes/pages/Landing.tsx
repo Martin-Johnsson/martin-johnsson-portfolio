@@ -1,11 +1,11 @@
 import { FC } from 'react';
 
-import Welcome from '../../components/Welcome';
+import Introduction from '../../components/introduction/Introduction';
 
 const Landing: FC = () => {
   return (
     <main>
-      <Welcome />
+      <Introduction />
     </main>
   );
 };
