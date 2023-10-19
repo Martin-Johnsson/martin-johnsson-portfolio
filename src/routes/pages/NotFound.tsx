@@ -5,8 +5,8 @@ import {
   BigHeading,
   NavigateBackText,
   PortfolioHomeContainer,
-} from '../../styles/StyledComponents';
-import { MediumHeading } from '../../styles/StyledComponents';
+} from '../../globalStyles/GlobalStyledComponents';
+import { MediumHeading } from '../../globalStyles/GlobalStyledComponents';
 
 const NotFound: FC = () => {
   const navigate = useNavigate();

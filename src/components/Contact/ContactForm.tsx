@@ -12,7 +12,7 @@ import {
   CustomInput,
   FormHeading,
   MediumHeading,
-} from '../../styles/StyledComponents';
+} from './StyledContactComponents.tsx';
 
 import { RootState } from '../../redux/store';
 

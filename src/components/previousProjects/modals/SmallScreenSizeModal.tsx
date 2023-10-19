@@ -7,7 +7,7 @@ import {
   ModalText,
   StyledModalLink,
   LazyLoadingModalImage,
-} from '../../../styles/StyledComponents';
+} from '../../../globalStyles/GlobalStyledComponents';
 import { projects } from '../../../assets/projectsData';
 import { RootState } from '../../../redux/store';
 import { IProject, IProjectState } from '../../../types/interfaces';

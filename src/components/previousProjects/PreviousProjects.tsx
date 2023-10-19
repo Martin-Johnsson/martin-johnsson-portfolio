@@ -19,7 +19,7 @@ import {
   SmallScreenSmallBodyText,
   LazyLoadingImage,
   ProjectBox,
-} from '../../styles/StyledComponents';
+} from '../../globalStyles/GlobalStyledComponents';
 import { projects } from '../../assets/projectsData';
 import ProjectsModal from './Modal';
 import { RootState } from '../../redux/store';
