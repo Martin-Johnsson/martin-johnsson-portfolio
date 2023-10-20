@@ -34,3 +34,7 @@ export const LazyLoadingModalImage = styled(LazyLoadImage)`
   width: 70%;
   height: 70%;
 `;
+
+export const Icon = styled.i`
+  color: ${textColor};
+`;

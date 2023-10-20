@@ -7,6 +7,7 @@ import {
   ModalText,
   StyledModalLink,
   LazyLoadingModalImage,
+  Icon,
 } from './StyledComponentsModal.tsx';
 import { projects } from 'src/assets/projectsData';
 import { RootState } from 'src/redux/store';
@@ -57,7 +58,7 @@ const SmallScreenSize = () => {
           )}
           {!selectedProject.links?.github && (
             <Box>
-              <i className='fa-solid fa-code'></i>
+              <Icon className='fa-solid fa-code'></Icon>
               <StyledModalLink>
                 No code available. NDA Protected.{' '}
               </StyledModalLink>
