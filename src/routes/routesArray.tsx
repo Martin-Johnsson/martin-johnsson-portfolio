@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom';
 
 import BaseLayout from 'src/layout/BaseLayout';
-import Contact from 'src/components/Contact/ContactForm';
+import Contact from 'srccomponents/contact/ContactForm';
 import Projects from 'src/components/previousProjects/PreviousProjects';
 import Landing from './pages/Landing';
 import NotFound from './pages/NotFound';

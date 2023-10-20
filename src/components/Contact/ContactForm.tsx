@@ -14,7 +14,7 @@ import {
   ContactSection,
   CustomInput,
   FormHeading,
-} from 'src/components/Contact/StyledContactComponents.tsx';
+} from 'srccomponents/contact/StyledContactComponents';
 
 import { RootState } from 'src/redux/store';
 
