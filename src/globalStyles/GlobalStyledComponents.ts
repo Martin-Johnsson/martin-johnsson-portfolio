@@ -77,7 +77,7 @@ export const SmallScreenSmallBodyText = styled.h4`
   font-size: 1rem;
   display: block;
   font-weight: 600;
-  color: #${textColor};
+  color: ${textColor};
   margin-top: 1vh;
   margin-left: 2vh;
   margin-bottom: 2.5vh;
