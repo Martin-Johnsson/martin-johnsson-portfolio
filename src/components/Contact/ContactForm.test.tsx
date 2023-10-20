@@ -9,10 +9,10 @@ describe('Contact Form', () => {
     //Arrange
     render(<ContactForm />);
 
-    const introduction = screen.getByText('Want to get in contact?');
+    const contactHeading = screen.getByText('Want to get in contact?');
 
     // Assert
 
-    expect(introduction).toBeInTheDocument();
+    expect(contactHeading).toBeInTheDocument();
   });
 });
