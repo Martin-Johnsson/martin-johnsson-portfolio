@@ -48,16 +48,13 @@ const BigScreenSize = () => {
             {selectedProject.links?.github && (
               <Link href={selectedProject.links.github} isExternal>
                 <i className='fa-solid fa-code'></i>
-                <StyledModalLink> Checkout the code on GitHub </StyledModalLink>
+                <StyledModalLink> Checkout on GitHub </StyledModalLink>
               </Link>
             )}
             {selectedProject.links?.liveExample && (
               <Link href={selectedProject.links.liveExample} isExternal>
                 <i className='fa-solid fa-laptop-code'></i>
-                <StyledModalLink>
-                  {' '}
-                  Checkout live on CodeSandbox{' '}
-                </StyledModalLink>
+                <StyledModalLink> Checkout live </StyledModalLink>
               </Link>
             )}
             {!selectedProject.links?.github && (
