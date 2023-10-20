@@ -6,7 +6,8 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "/src*": ["./src/*"],
+      "src*": ["./src/*"],
+      "test-utils": ["/utils/test-utils"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -22,6 +23,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "babel.config.js"],
+  "include": ["src", "babel.config.js", "vitest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
