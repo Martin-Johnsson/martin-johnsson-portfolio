@@ -1,4 +1,4 @@
-import { Box, Flex, Link } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { useSelector } from 'react-redux';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
