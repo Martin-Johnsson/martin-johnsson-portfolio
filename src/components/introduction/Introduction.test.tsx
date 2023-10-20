@@ -33,4 +33,18 @@ describe('Introduction', () => {
     // Assert
     expect(contactHeadingText);
   });
+  test(`should send user to Projects upon pressing "View my projects`, async () => {
+    //Arrange
+    render(<Introduction />);
+
+    const viewMyProjectsButton = screen.getByRole('button');
+
+    const InsightsProjectHeading = screen.findByText('Insights');
+
+    // Act
+    await userEvent.click(viewMyProjectsButton);
+
+    // Asser
+    expect(InsightsProjectHeading);
+  });
 });
