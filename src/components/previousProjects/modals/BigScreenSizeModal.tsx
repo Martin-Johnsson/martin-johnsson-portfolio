@@ -8,6 +8,7 @@ import {
   ModalSecondHeading,
   StyledModalLink,
   LazyLoadingModalImage,
+  StyledModalLinkSpan,
 } from 'src/components/previousProjects/modals/StyledComponentsModal.tsx';
 import { projects } from 'src/assets/projectsData';
 import { RootState } from 'src/redux/store';
@@ -46,23 +47,26 @@ const BigScreenSize = () => {
         <Flex direction='column'>
           <Box color='#f5f0f0' alignSelf='center'>
             {selectedProject.links?.github && (
-              <Link href={selectedProject.links.github} isExternal>
+              <StyledModalLink href={selectedProject.links.github} isExternal>
                 <i className='fa-solid fa-code'></i>
-                <StyledModalLink> Checkout on GitHub </StyledModalLink>
-              </Link>
+                <StyledModalLinkSpan> Checkout on GitHub </StyledModalLinkSpan>
+              </StyledModalLink>
             )}
             {selectedProject.links?.liveExample && (
-              <Link href={selectedProject.links.liveExample} isExternal>
+              <StyledModalLink
+                href={selectedProject.links.liveExample}
+                isExternal
+              >
                 <i className='fa-solid fa-laptop-code'></i>
-                <StyledModalLink> Checkout live </StyledModalLink>
-              </Link>
+                <StyledModalLinkSpan> Checkout live </StyledModalLinkSpan>
+              </StyledModalLink>
             )}
             {!selectedProject.links?.github && (
               <Box>
                 <i className='fa-solid fa-code'></i>
-                <StyledModalLink>
+                <StyledModalLinkSpan>
                   No code available. NDA Protected.{' '}
-                </StyledModalLink>
+                </StyledModalLinkSpan>
               </Box>
             )}
           </Box>

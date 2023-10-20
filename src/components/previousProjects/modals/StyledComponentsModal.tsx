@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { theme } from 'src/globalStyles/theme';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from '@chakra-ui/react';
 
 const { textColor, primaryAccentColor, secondaryAccentColor } = theme;
 
@@ -21,11 +22,19 @@ export const ModalText = styled.span`
   font-weight: 700;
   color: ${textColor};
 `;
-
-export const StyledModalLink = styled.span`
+export const StyledModalLink = styled(Link)`
   color: ${secondaryAccentColor};
   &:hover {
     color: ${primaryAccentColor};
+    text-decoration: none;
+  }
+`;
+
+export const StyledModalLinkSpan = styled.span`
+  color: ${secondaryAccentColor};
+  &:hover {
+    color: ${primaryAccentColor};
+    text-decoration: none;
   }
 `;
 
