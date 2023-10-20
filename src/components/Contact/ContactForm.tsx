@@ -5,16 +5,16 @@ import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from '@reduxjs/toolkit';
 
-import { IContactState } from '/src/types/interfaces';
+import { IContactState } from 'src/types/interfaces';
 import {
   BigHeading,
   MediumHeading,
-} from '/src/globalStyles/GlobalStyledComponents';
+} from 'src/globalStyles/GlobalStyledComponents';
 import {
   ContactSection,
   CustomInput,
   FormHeading,
-} from '/src/components/Contact/StyledContactComponents.tsx';
+} from 'src/components/Contact/StyledContactComponents.tsx';
 
 import { RootState } from 'src/redux/store';
 
