@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import Introduction from 'src/components/introduction/Introduction';
+import Introduction from 'components/introduction/Introduction';
 
 const Landing: FC = () => {
   return (

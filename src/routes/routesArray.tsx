@@ -1,10 +1,11 @@
 import { RouteObject } from 'react-router-dom';
 
-import BaseLayout from 'src/layout/BaseLayout';
-import Contact from './pages/Contact';
-import Projects from './pages/Projects';
-import Landing from './pages/Landing';
-import NotFound from './pages/NotFound';
+import 'globalStyles/index.css';
+import BaseLayout from 'layout/BaseLayout';
+import Contact from 'routes/pages/Contact';
+import Projects from 'routes/pages/Projects';
+import Landing from 'routes/pages/Landing';
+import NotFound from 'routes/pages/NotFound';
 
 export const routes: RouteObject[] = [
   {

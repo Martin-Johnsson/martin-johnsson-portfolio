@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 
-import { render } from 'src/utils/test-utils';
-import ContactForm from './ContactForm';
+import { render } from 'utils/test-utils';
+import ContactForm from 'components/contact/ContactForm';
 
 describe('ContactForm', () => {
   test('should render without errors', async () => {

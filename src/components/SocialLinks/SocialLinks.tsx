@@ -1,7 +1,7 @@
 import { Box, Flex, Link } from '@chakra-ui/react';
 import { FC } from 'react';
 
-import { SmallLinksText } from 'src/globalStyles/GlobalStyledComponents';
+import { SmallLinksText } from 'globalStyles/GlobalStyledComponents';
 
 const Links: FC = () => {
   return (

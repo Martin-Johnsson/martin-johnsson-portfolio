@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import PreviousProjects from 'src/components/previousProjects/PreviousProjects';
+import PreviousProjects from 'components/previousProjects/PreviousProjects';
 
 const Projects: FC = () => {
   return (

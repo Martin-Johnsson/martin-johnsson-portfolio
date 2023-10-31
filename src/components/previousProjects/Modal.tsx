@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import BigScreenSize from './modals/BigScreenSizeModal';
-import SmallScreenSize from './modals/SmallScreenSizeModal';
+import BigScreenSize from 'components/previousProjects/modals/BigScreenSizeModal';
+import SmallScreenSize from 'components/previousProjects/modals/SmallScreenSizeModal';
 
 const ProjectsModal = ({
   modalIsOpen,

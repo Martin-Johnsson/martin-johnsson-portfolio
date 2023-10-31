@@ -14,7 +14,7 @@ import {
   ProjectsSection,
   LazyLoadingImage,
   ProjectBox,
-} from './StyledComponentsPreviousProjects.tsx';
+} from 'components/previousProjects/StyledComponentsPreviousProjects';
 import {
   BigHeading,
   BodyText,
@@ -22,10 +22,10 @@ import {
   SmallScreenBodyText,
   SmallScreenSmallBodyText,
 } from '../../globalStyles/GlobalStyledComponents';
-import { projects } from 'src/assets/projectsData';
-import ProjectsModal from './Modal';
-import { RootState } from 'src/redux/store';
-import { IProjectState } from 'src/types/interfaces';
+import { projects } from 'assets/projectsData';
+import ProjectsModal from 'components/previousProjects/Modal';
+import { RootState } from 'redux/store';
+import { IProjectState } from 'types/interfaces';
 
 const Projects: FC = () => {
   const dispatch: Dispatch = useDispatch();

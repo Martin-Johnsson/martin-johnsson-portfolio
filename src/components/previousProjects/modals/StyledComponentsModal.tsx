@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'src/globalStyles/theme';
+import { theme } from 'globalStyles/theme';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from '@chakra-ui/react';
 

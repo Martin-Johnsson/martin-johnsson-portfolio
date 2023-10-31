@@ -1,5 +1,6 @@
-import { IProjectState } from 'src/types/interfaces';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+import { IProjectState } from 'types/interfaces';
 
 const initialState: IProjectState = {
   selectedProject: 0,

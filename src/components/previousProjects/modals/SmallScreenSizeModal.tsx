@@ -8,10 +8,10 @@ import {
   StyledModalLink,
   LazyLoadingModalImage,
   Icon,
-} from './StyledComponentsModal.tsx';
-import { projects } from 'src/assets/projectsData';
-import { RootState } from 'src/redux/store';
-import { IProject, IProjectState } from 'src/types/interfaces';
+} from 'components/previousProjects/modals/StyledComponentsModal';
+import { projects } from 'assets/projectsData';
+import { RootState } from 'redux/store';
+import { IProject, IProjectState } from 'types/interfaces';
 
 const SmallScreenSize = () => {
   const projectsState: IProjectState = useSelector(
