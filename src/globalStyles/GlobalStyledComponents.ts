@@ -1,7 +1,7 @@
 import { MenuItem } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
-import { theme } from './theme';
+import { theme } from 'globalStyles/theme';
 
 const { textColor, primaryAccentColor, secondaryAccentColor } = theme;
 
