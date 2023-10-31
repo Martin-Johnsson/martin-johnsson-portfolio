@@ -1,8 +1,8 @@
 import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 
-import HeaderLayout from './HeaderLayout';
-import Links from 'src/components/SocialLinks/SocialLinks';
+import HeaderLayout from 'layout/HeaderLayout';
+import Links from 'components/SocialLinks/SocialLinks';
 
 const BaseLayout = () => {
   return (
