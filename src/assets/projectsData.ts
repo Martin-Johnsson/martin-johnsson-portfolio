@@ -37,37 +37,34 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
-    name: 'Portfolio',
-    description: '- This website!',
-    modalAbout: `Project for showcasing my experience and easily get in contact with me.`,
+    name: 'Highscore',
+    description:
+      '- A Fullstack project (Currently being updated to use MongoDB, TypeScript and React.)',
+    modalAbout: `An application to keep track of highscores in different games`,
     placeholderMainImage: {
-      imageUrl: 'images/briefcase-solid.svg',
-      alt: 'Placeholder UI in insights application',
+      imageUrl: 'images/placeholders/darkLogo.webp',
+      alt: 'Placeholder picture from UI of Highscore application',
     },
     mainImage: {
-      imageUrl: 'images/briefcase-solid.svg',
-      alt: 'Placeholder for Smart Refills logo',
+      imageUrl: 'images/front/highscoreFront.png',
+      alt: 'Picture of UI of Ewallet application',
     },
     modalPlaceholderImage: {
-      imageUrl: 'images/modals/placeholders/insights.webp',
-      alt: 'Placeholder for UI in insights',
+      imageUrl: 'images/modals/placeholders/highscoreModalPlaceholder.webp',
+      alt: 'Placeholder picture of Highscore Modal',
     },
     modalImage: {
-      imageUrl: 'images/briefcase-solid.svg',
-      alt: 'UI in Portfolio',
+      imageUrl: 'images/modals/highscoreModal.png',
+      alt: 'Picture of games document in MongoDB Compass',
     },
-
     tags: [
-      { id: 2, tag: 'React' },
-      { id: 1, tag: 'TypeScript' },
-      { id: 3, tag: 'Redux' },
-      { id: 4, tag: 'Chakra UI' },
-      { id: 10, tag: 'Emotion.js' },
-      { id: 9, tag: 'Git' },
+      { id: 1, tag: 'Node.js' },
+      { id: 2, tag: 'MongoDB' },
+      { id: 3, tag: 'TypeScript' },
+      { id: 4, tag: 'React' },
     ],
     links: {
-      github: 'https://github.com/Martin-Johnsson',
-      liveExample: 'https://martinjohnsson.dev/',
+      github: 'https://github.com/Martin-Johnsson/highscore',
     },
   },
   {
@@ -103,34 +100,37 @@ export const projects: IProject[] = [
   },
   {
     id: 4,
-    name: 'Highscore',
-    description:
-      '- A Fullstack project (Currently being updated to use MongoDB, TypeScript and React.)',
-    modalAbout: `An application to keep track of highscores in different games`,
+    name: 'Portfolio',
+    description: '- This website!',
+    modalAbout: `Project for showcasing my experience and easily get in contact with me.`,
     placeholderMainImage: {
-      imageUrl: 'images/placeholders/darkLogo.webp',
-      alt: 'Placeholder picture from UI of Highscore application',
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'Placeholder UI in insights application',
     },
     mainImage: {
-      imageUrl: 'images/front/highscoreFront.png',
-      alt: 'Picture of UI of Ewallet application',
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'Placeholder for Smart Refills logo',
     },
     modalPlaceholderImage: {
-      imageUrl: 'images/modals/placeholders/highscoreModalPlaceholder.webp',
-      alt: 'Placeholder picture of Highscore Modal',
+      imageUrl: 'images/modals/placeholders/insights.webp',
+      alt: 'Placeholder for UI in insights',
     },
     modalImage: {
-      imageUrl: 'images/modals/highscoreModal.png',
-      alt: 'Picture of games document in MongoDB Compass',
+      imageUrl: 'images/briefcase-solid.svg',
+      alt: 'UI in Portfolio',
     },
+
     tags: [
-      { id: 1, tag: 'Node.js' },
-      { id: 2, tag: 'MongoDB' },
-      { id: 3, tag: 'TypeScript' },
-      { id: 4, tag: 'React' },
+      { id: 2, tag: 'React' },
+      { id: 1, tag: 'TypeScript' },
+      { id: 3, tag: 'Redux' },
+      { id: 4, tag: 'Chakra UI' },
+      { id: 10, tag: 'Emotion.js' },
+      { id: 9, tag: 'Git' },
     ],
     links: {
-      github: 'https://github.com/Martin-Johnsson/highscore',
+      github: 'https://github.com/Martin-Johnsson',
+      liveExample: 'https://martinjohnsson.dev/',
     },
   },
   {
