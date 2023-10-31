@@ -1,8 +1,8 @@
 import { RouteObject } from 'react-router-dom';
 
 import BaseLayout from 'src/layout/BaseLayout';
-import Contact from 'src/components/contact/ContactForm';
-import Projects from 'src/components/previousProjects/PreviousProjects';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 import Landing from './pages/Landing';
 import NotFound from './pages/NotFound';
 
