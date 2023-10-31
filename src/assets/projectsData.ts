@@ -60,8 +60,9 @@ export const projects: IProject[] = [
     tags: [
       { id: 1, tag: 'Node.js' },
       { id: 2, tag: 'MongoDB' },
-      { id: 3, tag: 'TypeScript' },
-      { id: 4, tag: 'React' },
+      { id: 3, tag: 'AWS' },
+      { id: 4, tag: 'TypeScript' },
+      { id: 5, tag: 'React' },
     ],
     links: {
       github: 'https://github.com/Martin-Johnsson/highscore',
