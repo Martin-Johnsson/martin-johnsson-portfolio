@@ -104,27 +104,30 @@ export const projects: IProject[] = [
   {
     id: 4,
     name: 'Highscore',
-    description: '- A Fullstack project with Node.js',
-    modalAbout: ``,
+    description:
+      '- A Fullstack project (Currently being updated to use MongoDB, TypeScript and React.)',
+    modalAbout: `An application to keep track of highscores in different games`,
     placeholderMainImage: {
-      imageUrl: 'images/placeholders/eWalletPlaceholder.jpg',
+      imageUrl: 'images/placeholders/darkLogo.webp',
       alt: 'Placeholder picture from UI of Highscore application',
     },
     mainImage: {
-      imageUrl: 'images/front/highscoreFront.jpg',
+      imageUrl: 'images/front/highscoreFront.png',
       alt: 'Picture of UI of Ewallet application',
     },
     modalPlaceholderImage: {
-      imageUrl: 'eWalletl.webp',
+      imageUrl: 'images/modals/placeholders/highscoreModalPlaceholder.webp',
       alt: 'Placeholder picture of Highscore Modal',
     },
     modalImage: {
-      imageUrl: 'images/modals/eWalletModal.png',
-      alt: 'Another picture of UI of HighScore application',
+      imageUrl: 'images/modals/highscoreModal.png',
+      alt: 'Picture of games document in MongoDB Compass',
     },
     tags: [
       { id: 1, tag: 'Node.js' },
-      { id: 2, tag: 'JavaScript' },
+      { id: 2, tag: 'MongoDB' },
+      { id: 3, tag: 'TypeScript' },
+      { id: 4, tag: 'React' },
     ],
     links: {
       github: 'https://github.com/Martin-Johnsson/highscore',
