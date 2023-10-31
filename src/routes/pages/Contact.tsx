@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import ContactForm from '../../components/contact/ContactForm';
+import ContactForm from '../../components/contact/ContactForm.tsx';
 
 const Contact: FC = () => {
   return (
