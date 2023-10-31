@@ -5,6 +5,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
     "paths": {
       "src*": ["./src/*"],
       "test-utils": ["/utils/test-utils"]
@@ -23,6 +24,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "babel.config.js", "vitest.config.ts"],
+  "include": ["src/**/*", "babel.config.js", "vitest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
