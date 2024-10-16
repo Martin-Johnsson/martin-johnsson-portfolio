@@ -40,9 +40,9 @@ export const getProjects = async (
 
   try {
     projects = await Project.find({});
-  } catch (err) {
+  } catch (err: unknown) {
     const error = new HttpError(
-      'Fetching projects failed. Pleasr try again later',
+      'Fetching projects failed. Please try again later',
       500
     );
     return next(error);
@@ -51,4 +51,34 @@ export const getProjects = async (
   res.json({
     projects: projects.map((project) => project.toObject({ getters: true })),
   });
+};
+
+export const getProjectById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const projectId: string = req.params.projectId;
+
+  let project: null | IProjects;
+
+  try {
+    project = await Project.findById(projectId);
+  } catch (err: unknown) {
+    const error = new HttpError(
+      'Something went wrong, could not find project.',
+      500
+    );
+    return next(error);
+  }
+
+  if (!project) {
+    const error = new HttpError(
+      `Couldn't find a project for the provided id.`,
+      404
+    );
+    return next(error);
+  }
+
+  res.json({ project: project.toObject({ getters: true }) });
 };
