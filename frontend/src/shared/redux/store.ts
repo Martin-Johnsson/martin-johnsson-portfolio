@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import projectsReducer from 'redux/reducers/projectsReducer';
-import contactReducer from 'redux/reducers/contactReducer';
+import projectsReducer from 'shared/redux/reducers/projectsReducer';
+import contactReducer from 'shared/redux/reducers/contactReducer';
 
 const store = configureStore({
   reducer: { projects: projectsReducer, contact: contactReducer },

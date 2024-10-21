@@ -9,16 +9,16 @@ import {
   StyledModalLink,
   LazyLoadingModalImage,
   StyledModalLinkSpan,
-} from 'components/previousProjects/modals/StyledComponentsModal';
-import { projects } from 'assets/projectsData';
-import { RootState } from 'redux/store';
-import { IProject, IProjectState } from 'types/interfaces';
+} from 'components/projects/modal/modals/StyledComponentsModal';
+import { RootState } from 'shared/redux/store';
+import { IProject, IProjectState } from 'shared/types/interfaces';
 
-const BigScreenSize = () => {
+const BigScreenSizeModal = (props) => {
   const projectsState: IProjectState = useSelector(
     (state: RootState) => state.projects
   );
-  const selectedProject: IProject = projects[projectsState.selectedProject];
+  const selectedProject: IProject =
+    props.loadedProjects[projectsState.selectedProject];
 
   return (
     <>
@@ -46,13 +46,13 @@ const BigScreenSize = () => {
         </Flex>
         <Flex direction='column'>
           <Box color='#f5f0f0' alignSelf='center'>
-            {selectedProject.links?.github && (
+            {selectedProject.links?.github ?? (
               <StyledModalLink href={selectedProject.links.github} isExternal>
                 <i className='fa-solid fa-code'></i>
                 <StyledModalLinkSpan> Checkout on GitHub </StyledModalLinkSpan>
               </StyledModalLink>
             )}
-            {selectedProject.links?.liveExample && (
+            {selectedProject.links?.liveExample ?? (
               <StyledModalLink
                 href={selectedProject.links.liveExample}
                 isExternal
@@ -76,4 +76,4 @@ const BigScreenSize = () => {
   );
 };
 
-export default BigScreenSize;
+export default BigScreenSizeModal;

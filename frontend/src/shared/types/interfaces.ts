@@ -7,12 +7,7 @@ export interface IContactState {
   emailSubmitted: boolean;
 }
 
-export interface ITags {
-  id: number;
-  tag: string;
-}
-
-export interface IiMage {
+export interface Iimage {
   imageUrl: string;
   alt: string;
 }
@@ -22,11 +17,11 @@ export interface IProject {
   name: string;
   modalAbout: string;
   description?: string;
-  placeholderMainImage: IiMage;
-  mainImage?: IiMage;
-  modalPlaceholderImage: IiMage;
-  modalImage?: IiMage;
-  tags: ITags[];
+  placeholderMainImage: Iimage;
+  mainImage?: Iimage;
+  modalPlaceholderImage: Iimage;
+  modalImage?: Iimage;
+  tags: { id: number; tag: string }[];
   links?: {
     github?: string | null;
     liveExample?: string;

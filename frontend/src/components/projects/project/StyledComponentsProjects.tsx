@@ -1,13 +1,15 @@
 import { Box } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { theme } from 'globalStyles/theme';
+
+import { theme } from 'shared/styles/theme/theme';
 
 const { secondaryAccentColor, tertiaryBackgroundColor } = theme;
 
 export const ProjectsSection = styled.section`
   margin-top: 15vh;
   margin-bottom: 15vh;
+  text-align: center;
 `;
 
 export const ProjectBox = styled(Box)`

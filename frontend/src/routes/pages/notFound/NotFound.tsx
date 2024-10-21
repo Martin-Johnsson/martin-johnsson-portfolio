@@ -6,7 +6,7 @@ import {
   BigHeading,
   MediumHeading,
   NavigateBackText,
-} from 'globalStyles/GlobalStyledComponents';
+} from 'shared/styles/GlobalStyledComponents';
 
 const NotFound: FC = () => {
   const navigate = useNavigate();
