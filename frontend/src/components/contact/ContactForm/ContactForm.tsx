@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from '@reduxjs/toolkit';
 
-import { IContactState } from 'shared/types/interfaces';
 import {
   BigHeading,
   MediumHeading,
@@ -16,10 +15,12 @@ import {
   FormHeading,
 } from 'components/contact/ContactForm/StyledContactComponents';
 
+import { IContactState } from 'shared/types/interfaces';
 import { RootState } from 'shared/redux/store';
+import LoadingSpinner from 'shared/components/LoadingSpinner/LoadingSpinner';
 
 const ContactForm: FC = () => {
-  const form: RefObject<any> = useRef(null);
+  const form: RefObject<null> = useRef(null);
   const contactState: IContactState = useSelector(
     (state: RootState) => state.contact
   );
@@ -110,13 +111,15 @@ const ContactForm: FC = () => {
         )}
       </Box>
 
+      {contactState.emailSubmitting && <LoadingSpinner />}
+
       {!contactState.emailSubmitting && contactState.emailSubmitted && (
         <Box marginTop='10vh'>
-          <BigHeading>Thank you!</BigHeading>
-          <BigHeading>I'll get back to you as soon as possible.</BigHeading>
+          <BigHeading>
+            Thank you! I'll get back to you as soon as possible.
+          </BigHeading>
         </Box>
       )}
-      {contactState.emailSubmitting && <BigHeading>Sending...</BigHeading>}
     </ContactSection>
   );
 };
