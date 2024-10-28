@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Dispatch } from '@reduxjs/toolkit';
 import { RootState } from 'shared/redux/store';
+
 import {
   Box,
   Flex,
@@ -9,7 +10,6 @@ import {
   WrapItem,
   useBreakpointValue,
 } from '@chakra-ui/react';
-
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {
   LazyLoadingImage,

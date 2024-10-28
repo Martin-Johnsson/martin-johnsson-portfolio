@@ -1,5 +1,6 @@
 import { IProject } from 'shared/types/interfaces';
 import SingleProject from '../SingleProject/SingleProject';
+
 import { ProjectsSection } from 'components/projects/project/StyledComponentsProjects';
 import { BigHeading } from 'shared/styles/GlobalStyledComponents';
 import { Wrap } from '@chakra-ui/react';
@@ -7,6 +8,7 @@ import { Wrap } from '@chakra-ui/react';
 interface IProjectProps {
   loadedProjects: [] | IProject[];
 }
+
 const ProjectList = (props: IProjectProps) => {
   if (!props.loadedProjects || props.loadedProjects.length === 0) {
     return <section></section>;

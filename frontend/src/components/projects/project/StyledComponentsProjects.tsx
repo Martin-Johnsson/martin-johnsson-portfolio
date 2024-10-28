@@ -1,7 +1,7 @@
-import { Box } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import { Box } from '@chakra-ui/react';
 import { theme } from 'shared/styles/theme/theme';
 
 const { secondaryAccentColor, tertiaryBackgroundColor } = theme;

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-import 'shared/globalStyles/index.css';
-
 import { ChakraProvider } from '@chakra-ui/react';
-import { routes } from 'routes/routesArray';
 import { Provider } from 'react-redux';
+
+import 'shared/styles/globalStyles/index.css';
+
+import { routes } from 'routes/routesArray';
 import store from 'shared/redux/store';
 
 const router = createBrowserRouter(routes, {});

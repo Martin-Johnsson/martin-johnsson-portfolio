@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Link } from '@chakra-ui/react';
 
+import { Link } from '@chakra-ui/react';
 import { theme } from 'shared/styles/theme/theme';
 
 const { textColor, primaryAccentColor, secondaryAccentColor } = theme;

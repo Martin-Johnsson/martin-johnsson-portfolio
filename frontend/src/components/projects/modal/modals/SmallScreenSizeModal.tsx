@@ -1,7 +1,7 @@
 import { Box, Flex, Link } from '@chakra-ui/react';
 import { useSelector } from 'react-redux';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import {
   ModalHeading,
   ModalText,
@@ -9,6 +9,7 @@ import {
   LazyLoadingModalImage,
   Icon,
 } from 'components/projects/modal/modals/StyledComponentsModal';
+
 import { RootState } from 'shared/redux/store';
 import { IProject, IProjectState } from 'shared/types/interfaces';
 

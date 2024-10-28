@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
+
 import projectsReducer from 'shared/redux/reducers/projectsReducer';
 import contactReducer from 'shared/redux/reducers/contactReducer';
 

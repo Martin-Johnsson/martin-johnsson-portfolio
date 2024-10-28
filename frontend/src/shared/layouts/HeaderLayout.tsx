@@ -1,5 +1,6 @@
-import { Box, Flex, Menu } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+
+import { Box, Flex, Menu } from '@chakra-ui/react';
 
 import {
   StyledHeaderMenuItem,

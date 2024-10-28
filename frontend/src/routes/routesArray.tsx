@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import 'shared/globalStyles/index.css';
+import 'shared/styles/globalStyles/index.css';
 
 import BaseLayout from 'shared/layouts/BaseLayout';
 import Contact from 'routes/contact/Contact';
