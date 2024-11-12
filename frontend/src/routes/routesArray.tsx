@@ -4,9 +4,9 @@ import 'shared/styles/globalStyles/index.css';
 
 import BaseLayout from 'shared/layouts/BaseLayout';
 import Contact from 'routes/contact/Contact';
-import Projects from 'routes/pages/projects/Projects';
+import Projects from 'routes/projects/Projects';
 import Landing from 'routes/landing/Landing';
-import NotFound from 'routes/pages/notFound/NotFound';
+import NotFound from 'routes/notFound/NotFound';
 
 export const routes: RouteObject[] = [
   {

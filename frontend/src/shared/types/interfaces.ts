@@ -27,3 +27,8 @@ export interface IProject {
     liveExample?: string;
   };
 }
+
+export interface ITag {
+  id: number;
+  name: string;
+}
