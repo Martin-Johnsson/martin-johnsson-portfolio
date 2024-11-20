@@ -47,13 +47,13 @@ const BigScreenSizeModal = (props) => {
         </Flex>
         <Flex direction='column'>
           <Box color='#f5f0f0' alignSelf='center'>
-            {selectedProject.links?.github ?? (
+            {selectedProject.links?.github && (
               <StyledModalLink href={selectedProject.links.github} isExternal>
                 <i className='fa-solid fa-code'></i>
                 <StyledModalLinkSpan> Checkout on GitHub </StyledModalLinkSpan>
               </StyledModalLink>
             )}
-            {selectedProject.links?.liveExample ?? (
+            {selectedProject.links?.liveExample && (
               <StyledModalLink
                 href={selectedProject.links.liveExample}
                 isExternal
@@ -66,7 +66,7 @@ const BigScreenSizeModal = (props) => {
               <Box>
                 <i className='fa-solid fa-code'></i>
                 <StyledModalLinkSpan>
-                  No code available. NDA Protected.{' '}
+                  No code available. NDA Protected.
                 </StyledModalLinkSpan>
               </Box>
             )}

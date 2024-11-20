@@ -59,9 +59,7 @@ const SmallScreenSizeModal = (props) => {
         {!selectedProject.links?.github && (
           <Box>
             <Icon className='fa-solid fa-code'></Icon>
-            <StyledModalLink>
-              No code available. NDA Protected.{' '}
-            </StyledModalLink>
+            <StyledModalLink>No code available. NDA Protected.</StyledModalLink>
           </Box>
         )}
       </Box>
