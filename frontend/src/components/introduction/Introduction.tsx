@@ -6,7 +6,7 @@ import {
   BigHeading,
   MediumHeading,
   ThirdSizeHeading,
-} from 'globalStyles/GlobalStyledComponents';
+} from 'shared/styles/GlobalStyledComponents';
 import {
   PortfolioHomeContainer,
   ToProjectsButton,

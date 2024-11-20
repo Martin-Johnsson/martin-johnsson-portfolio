@@ -1,0 +1,13 @@
+:root {
+  font-family: sans-serif, system-ui, Arial;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

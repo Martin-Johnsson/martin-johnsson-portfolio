@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { render } from 'utils/test-utils';
+import { render } from 'shared/utils/test-utils';
 import Introduction from 'components/introduction//Introduction';
 
 describe('Introduction', () => {
