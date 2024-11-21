@@ -26,15 +26,16 @@ const Projects = () => {
   }, [sendRequest, BACKEND_URL]);
 
   return (
-    <section className='center'>
+    <ProjectsSection>
       {isLoading && (
-        <ProjectsSection>
+        <>
           <BigHeading>Projects</BigHeading>
           <LoadingSpinner asOverlay />
-        </ProjectsSection>
+        </>
       )}
+
       {!isLoading && <ProjectList loadedProjects={loadedProjects} />}
-    </section>
+    </ProjectsSection>
   );
 };
 
