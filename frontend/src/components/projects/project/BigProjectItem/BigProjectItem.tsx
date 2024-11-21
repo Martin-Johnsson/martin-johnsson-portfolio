@@ -50,16 +50,17 @@ const BigProjectItem = (props) => {
       <WrapItem key={props.id}>
         <Box
           boxShadow='0.14vh 0.14vw 1.98vh black '
-          key={props.id}
           cursor='pointer'
           onClick={() => {
             handleExpandProject(props.index);
           }}
           w='90vw'
         >
-          <Flex direction='column' alignItems={'center'}>
-            <Box alignSelf='center'>
-              <SmallScreenBodyText>{props.name}</SmallScreenBodyText>
+          <Flex direction='column' alignItems='center'>
+            <Box>
+              <Flex justifyContent='center'>
+                <SmallScreenBodyText>{props.name}</SmallScreenBodyText>
+              </Flex>
               <SmallScreenSmallBodyText>
                 {props.description}
               </SmallScreenSmallBodyText>
@@ -69,7 +70,6 @@ const BigProjectItem = (props) => {
                     return (
                       <ListItem
                         key={tag.id}
-                        max-w='5'
                         border='0.2rem solid #0b3d54'
                         color='#f5f0f0'
                         marginLeft='0.6vw'
@@ -85,8 +85,8 @@ const BigProjectItem = (props) => {
               <Box justifyContent='center' marginBottom='10vh' marginTop='5vh'>
                 <LazyLoadingImage
                   src={props.mainImage?.imageUrl}
-                  alt='Screenshot of Insights application'
-                  placeholderSrc={props.placeholderMainImage.imageUrl}
+                  alt={props.mainImage?.altText}
+                  placeholderSrc={props.placeholderMainImage?.imageUrl}
                   effect='blur'
                 />
               </Box>

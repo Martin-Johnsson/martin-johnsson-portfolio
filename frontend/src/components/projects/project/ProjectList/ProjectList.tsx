@@ -1,7 +1,5 @@
 import { IProject } from 'shared/types/interfaces';
 
-import { ProjectsSection } from 'components/projects/project/StyledComponentsProjects';
-import { BigHeading } from 'shared/styles/GlobalStyledComponents';
 import { useBreakpointValue, Wrap } from '@chakra-ui/react';
 import SmallProjectItem from '../SmallProjectItem/SmallProjectItem';
 import BigProjectItem from '../BigProjectItem/BigProjectItem';
@@ -20,50 +18,47 @@ const ProjectList = (props: IProjectProps) => {
     return <section></section>;
   } else {
     return (
-      <ProjectsSection>
-        <BigHeading>Projects</BigHeading>
-        <Wrap
-          justify='center'
-          spacing='10vh'
-          align='center'
-          marginBottom='2vh'
-          marginTop='11vh'
-        >
-          {props.loadedProjects.map((project: IProject, index: number) =>
-            isSmallerThanLg ? (
-              <SmallProjectItem
-                key={project.id}
-                name={project.name}
-                description={project.description}
-                mainImage={project.mainImage}
-                modalImage={project.modalImage}
-                modalAbout={project.modalAbout}
-                tags={project.tags}
-                links={project.links}
-                placeholderMainImage={project.placeholderMainImage}
-                modalPlaceholderImage={project.modalPlaceholderImage}
-                index={index}
-                loadedProjects={props.loadedProjects}
-              />
-            ) : (
-              <BigProjectItem
-                key={project.id}
-                name={project.name}
-                description={project.description}
-                mainImage={project.mainImage}
-                modalImage={project.modalImage}
-                modalAbout={project.modalAbout}
-                tags={project.tags}
-                links={project.links}
-                placeholderMainImage={project.placeholderMainImage}
-                modalPlaceholderImage={project.modalPlaceholderImage}
-                index={index}
-                loadedProjects={props.loadedProjects}
-              />
-            )
-          )}
-        </Wrap>
-      </ProjectsSection>
+      <Wrap
+        justify='center'
+        spacing='10vh'
+        align='center'
+        marginBottom='2vh'
+        marginTop='11vh'
+      >
+        {props.loadedProjects.map((project: IProject, index: number) =>
+          isSmallerThanLg ? (
+            <SmallProjectItem
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              mainImage={project.mainImage}
+              modalImage={project.modalImage}
+              modalAbout={project.modalAbout}
+              tags={project.tags}
+              links={project.links}
+              placeholderMainImage={project.placeholderMainImage}
+              modalPlaceholderImage={project.modalPlaceholderImage}
+              index={index}
+              loadedProjects={props.loadedProjects}
+            />
+          ) : (
+            <BigProjectItem
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              mainImage={project.mainImage}
+              modalImage={project.modalImage}
+              modalAbout={project.modalAbout}
+              tags={project.tags}
+              links={project.links}
+              placeholderMainImage={project.placeholderMainImage}
+              modalPlaceholderImage={project.modalPlaceholderImage}
+              index={index}
+              loadedProjects={props.loadedProjects}
+            />
+          )
+        )}
+      </Wrap>
     );
   }
 };

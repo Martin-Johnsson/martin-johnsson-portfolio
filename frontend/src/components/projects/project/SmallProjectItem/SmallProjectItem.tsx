@@ -48,7 +48,7 @@ const SmallProjectItem = (props) => {
 
       <WrapItem key={props.id}>
         <Box
-          boxShadow='0.14vh 0.14vw 1.98vh black '
+          boxShadow='0.14vh 0.14vw 1.98vh black'
           key={props.id}
           cursor='pointer'
           onClick={() => {
@@ -56,47 +56,47 @@ const SmallProjectItem = (props) => {
           }}
           w='90vw'
         >
-          <Flex direction='column' alignItems={'center'}>
-            <>
-              <Box alignSelf='center'>
+          <Flex direction='column' alignItems='center'>
+            <Box alignSelf='center'>
+              <Flex justifySelf='center'>
                 <SmallScreenBodyText>{props.name}</SmallScreenBodyText>
-                <SmallScreenSmallBodyText>
-                  {props.description}
-                </SmallScreenSmallBodyText>
-                <Flex marginRight='1vw' flexWrap='wrap' marginTop='1.5vh'>
-                  <UnorderedList>
-                    {props.tags.map((tag: ITag) => {
-                      return (
-                        <ListItem
-                          key={tag.id}
-                          max-w='5'
-                          border='0.2rem solid #0b3d54'
-                          color='#f5f0f0'
-                          marginLeft='2vw'
-                          marginTop='1vh'
-                          display='inline-block'
-                          padding='0.2vw'
-                        >
-                          {tag.name}
-                        </ListItem>
-                      );
-                    })}
-                  </UnorderedList>
-                </Flex>
-              </Box>
-              <Box
-                justifyContent='center'
-                marginBottom='10vh'
-                marginTop='5vh'
-                borderRadius='1.5vw'
-              >
-                <LazyLoadingImage
-                  src={props.mainImage?.imageUrl}
-                  alt={props.mainImage?.alt}
-                  width='50vw'
-                />
-              </Box>
-            </>
+              </Flex>
+              <SmallScreenSmallBodyText>
+                {props.description}
+              </SmallScreenSmallBodyText>
+              <Flex marginRight='1vw' flexWrap='wrap' marginTop='1.5vh'>
+                <UnorderedList>
+                  {props.tags.map((tag: ITag) => {
+                    return (
+                      <ListItem
+                        key={tag.id}
+                        max-w='5'
+                        border='0.2rem solid #0b3d54'
+                        color='#f5f0f0'
+                        marginLeft='2vw'
+                        marginTop='1vh'
+                        display='inline-block'
+                        padding='0.2vw'
+                      >
+                        {tag.name}
+                      </ListItem>
+                    );
+                  })}
+                </UnorderedList>
+              </Flex>
+            </Box>
+            <Box
+              justifyContent='center'
+              marginBottom='10vh'
+              marginTop='5vh'
+              borderRadius='1.5vw'
+            >
+              <LazyLoadingImage
+                src={props.mainImage?.imageUrl}
+                alt={props.mainImage?.alt}
+                width='50vw'
+              />
+            </Box>
           </Flex>
         </Box>
       </WrapItem>

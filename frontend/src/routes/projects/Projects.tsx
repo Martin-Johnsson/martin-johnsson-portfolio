@@ -4,6 +4,8 @@ import { useHttpClient } from 'shared/hooks/Http-hook';
 import { IProject } from 'shared/types/interfaces';
 import ProjectList from 'components/projects/project/ProjectList/ProjectList';
 import LoadingSpinner from 'shared/components/LoadingSpinner/LoadingSpinner';
+import { ProjectsSection } from 'components/projects/project/StyledComponentsProjects';
+import { BigHeading } from 'shared/styles/GlobalStyledComponents';
 
 const Projects = () => {
   const [loadedProjects, setLoadedProjects] = useState<[] | IProject[]>([]);
@@ -25,7 +27,12 @@ const Projects = () => {
 
   return (
     <section className='center'>
-      {isLoading && <LoadingSpinner asOverlay />}
+      {isLoading && (
+        <ProjectsSection>
+          <BigHeading>Projects</BigHeading>
+          <LoadingSpinner asOverlay />
+        </ProjectsSection>
+      )}
       {!isLoading && <ProjectList loadedProjects={loadedProjects} />}
     </section>
   );
