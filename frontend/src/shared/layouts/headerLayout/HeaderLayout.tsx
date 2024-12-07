@@ -1,13 +1,11 @@
-import { useNavigate } from 'react-router-dom';
-
-import { Box, Flex, Menu } from '@chakra-ui/react';
-
 import {
-  StyledHeaderMenuItem,
+  MobileScreenHeader,
   StyledNavLink,
-  HeaderLayoutHomeNavigationTabText,
-  HeaderLayoutSecondaryNavigationTabText,
-} from 'shared/styles/GlobalStyledComponents';
+} from 'shared/layouts/headerLayout/StyledComponentsHeaderLayout';
+import { StyledHeaderMenuItem } from 'shared/styles/GlobalStyledComponents';
+
+import { useNavigate } from 'react-router-dom';
+import { Box, Flex, Menu, useBreakpointValue } from '@chakra-ui/react';
 
 const HeaderLayout = () => {
   const navigate = useNavigate();
@@ -19,61 +17,56 @@ const HeaderLayout = () => {
     });
   };
 
+  const isMobileScreenSize = useBreakpointValue({ base: true, lg: false });
+
   return (
-    <header>
-      <nav>
+    <MobileScreenHeader>
+      <nav aria-label='In-page jump links'>
         <Menu>
-          <Flex alignItems={'center'} h='12vh'>
+          <Flex>
             <Box
               onClick={() => {
                 navigate('/');
                 scrollToTop();
               }}
               cursor='pointer'
-              w='40vw'
             >
               <StyledHeaderMenuItem>
                 <StyledNavLink
-                  aria-roledescription='Navigation to home page'
+                  aria-label='Navigation to home page'
                   to='/'
                   onClick={scrollToTop}
                 >
-                  <HeaderLayoutHomeNavigationTabText>
-                    MARTIN JOHNSSON
-                  </HeaderLayoutHomeNavigationTabText>
+                  Home
                 </StyledNavLink>
               </StyledHeaderMenuItem>
             </Box>
-            <Box w='30vw'>
+            <Box>
               <StyledHeaderMenuItem>
                 <StyledNavLink
                   aria-roledescription='Navigate to projects page'
                   to='/projects'
                   onClick={scrollToTop}
                 >
-                  <HeaderLayoutSecondaryNavigationTabText>
-                    Projects
-                  </HeaderLayoutSecondaryNavigationTabText>
+                  Projects
                 </StyledNavLink>
               </StyledHeaderMenuItem>
             </Box>
-            <Box w='30vw'>
+            <Box>
               <StyledHeaderMenuItem>
                 <StyledNavLink
                   aria-roledescription='Navigate to Contact page'
                   to='/contact'
                   onClick={scrollToTop}
                 >
-                  <HeaderLayoutSecondaryNavigationTabText>
-                    Contact
-                  </HeaderLayoutSecondaryNavigationTabText>
+                  Contact
                 </StyledNavLink>
               </StyledHeaderMenuItem>
             </Box>
           </Flex>
         </Menu>
       </nav>
-    </header>
+    </MobileScreenHeader>
   );
 };
 
