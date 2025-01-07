@@ -57,6 +57,8 @@ const theme = extendTheme({
             ? theme.colors.light.primaryTextColor
             : theme.colors.dark.primaryTextColor,
         fontWeight: 600,
+        fontFamily: 'sans-serif, system-ui, Arial',
+        lineHeight: '1.5',
       },
     }),
   },
