@@ -2,10 +2,10 @@ import { RouteObject } from 'react-router-dom';
 
 import 'shared/styles/globalStyles/index.css';
 
-import BaseLayout from 'shared/layouts/BaseLayout';
+import BaseLayout from 'shared/layouts/BaseLayout/BaseLayout';
 import Contact from 'routes/contact/Contact';
 import Projects from 'routes/projects/Projects';
-import Landing from 'routes/landing/Landing';
+import Home from 'routes/home/Home';
 import NotFound from 'routes/notFound/NotFound';
 
 export const routes: RouteObject[] = [
@@ -15,7 +15,7 @@ export const routes: RouteObject[] = [
       {
         path: '/',
         index: true,
-        element: <Landing />,
+        element: <Home />,
       },
       {
         path: 'projects',
