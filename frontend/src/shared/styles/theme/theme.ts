@@ -20,9 +20,11 @@ const theme = extendTheme({
       backgrounds: {
         primary: 'linear(to-r,#04173c, #020925)',
         secondary: '#0d132b',
+        accenture: '#12796b19',
       },
       primaryTextColor: '#F5F5F5',
       secondaryTextColor: 'rgb(100 116 139)',
+      accentureTextColor: '#5dead5',
       primaryBorderColor: '#034078',
       primaryAccentColor: '#483ab0',
       icons: {
@@ -54,6 +56,7 @@ const theme = extendTheme({
           props.colorMode === 'light'
             ? theme.colors.light.primaryTextColor
             : theme.colors.dark.primaryTextColor,
+        fontWeight: 600,
       },
     }),
   },
