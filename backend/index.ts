@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 
 import projectsRoutes from './routes/projectsRoutes';
+import tasksRoutes from './routes/tasksRoutes';
 
 import HttpError from './models/http-error';
 import mongoose from 'mongoose';
@@ -21,6 +22,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 app.use('/api/projects', projectsRoutes);
+
+app.use('/api/tasks', tasksRoutes);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   const error: HttpError = new HttpError('Could not find this route.', 404);
