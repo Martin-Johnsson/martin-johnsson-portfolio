@@ -39,6 +39,9 @@ const theme = extendTheme({
           color: '#f5f0f0',
         },
       },
+      text: {
+        warning: '#a4130e',
+      },
     },
   },
   styles: {
