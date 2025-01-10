@@ -4,7 +4,7 @@ import TaskItem from 'components/tasks/taskItem/TaskItem';
 
 const TaskList = (props) => {
   return (
-    <OrderedList listStyleType='circle' ml='7%' fontSize='0.9rem'>
+    <OrderedList listStyleType='circle' fontSize='0.9rem' ml='10%'>
       {props.loadedTasks ? (
         props.loadedTasks.map((task) => (
           <TaskItem

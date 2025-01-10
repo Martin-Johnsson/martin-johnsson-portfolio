@@ -23,7 +23,7 @@ const theme = extendTheme({
         accenture: '#12796b19',
       },
       primaryTextColor: '#F5F5F5',
-      secondaryTextColor: 'rgb(100 116 139)',
+      secondaryTextColor: '#707979ea',
       accentureTextColor: '#5dead5',
       primaryBorderColor: '#034078',
       primaryAccentColor: '#483ab0',
