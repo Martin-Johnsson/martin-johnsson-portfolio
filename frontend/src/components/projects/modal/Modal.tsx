@@ -1,35 +1,30 @@
 import {
-  Modal,
+  useColorMode,
+  Modal as ChakraModal,
   ModalContent,
   ModalOverlay,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import BigScreenSizeModal from 'components/projects/modal/modals/BigScreenSizeModal';
-import SmallScreenSizeModal from 'components/projects/modal/modals/SmallScreenSizeModal';
-
-const ProjectsModal = (props) => {
+const Modal = (props) => {
+  const { colorMode } = useColorMode();
   const isSmallerThanLg = useBreakpointValue({ base: true, lg: false });
 
   return (
-    <Modal
-      isOpen={props.modalIsOpen}
-      onClose={props.closeModal}
-      size='l'
-      closeOnOverlayClick={true}
+    <ChakraModal
+      isOpen={props.isOpen}
+      onClose={props.handleCloseModal}
+      closeOnOverlayClick={props.closeOnOverlayClick}
+      size={isSmallerThanLg ? 'xl' : '6xl'}
     >
       <ModalOverlay>
-        <ModalContent bg='#242424' w='99vw' h='70vh'>
-          {isSmallerThanLg ? (
-            <SmallScreenSizeModal loadedProjects={props.loadedProjects} />
-          ) : (
-            <BigScreenSizeModal loadedProjects={props.loadedProjects} />
-          )}
+        <ModalContent bg={`${colorMode}.backgrounds.secondary`}>
+          {props.children}
         </ModalContent>
       </ModalOverlay>
-    </Modal>
+    </ChakraModal>
   );
 };
 
-export default ProjectsModal;
+export default Modal;
