@@ -13,7 +13,7 @@ export interface Iimage {
 }
 
 export interface IProject {
-  id: number;
+  id: number | string;
   name: string;
   modalAbout: string;
   description?: string;
@@ -28,7 +28,19 @@ export interface IProject {
   };
 }
 
+export interface ITask {
+  id: number;
+  taskName: string;
+  description: string;
+}
+
 export interface ITag {
   id: number;
   name: string;
+}
+
+export interface ILinks {
+  href: string;
+  icon: string;
+  id: string;
 }
