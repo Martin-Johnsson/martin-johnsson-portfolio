@@ -1,51 +1,45 @@
 import { FC, MouseEventHandler } from 'react';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import { Box } from '@chakra-ui/react';
+import { Box, Heading, useColorMode } from '@chakra-ui/react';
 
-import {
-  BigHeading,
-  MediumHeading,
-  ThirdSizeHeading,
-} from 'shared/styles/GlobalStyledComponents';
-import {
-  PortfolioHomeContainer,
-  ToProjectsButton,
-} from 'components/introduction/StyledComponentsIntroduction';
+import { StyledCraftingSpan } from 'shared/styles/GlobalStyledComponents';
+import { ViewProjectsButton } from 'components/introduction/StyledComponentsIntroduction';
+import SocialLinks from 'shared/components/SocialLinks/SocialLinks';
 
 const Introduction: FC = () => {
+  const { colorMode } = useColorMode();
   const navigate: NavigateFunction = useNavigate();
-  const handleOnHeadingClick: MouseEventHandler<HTMLHeadingElement> = () => {
-    scrollToTop();
-    navigate('/contact');
-  };
+
   const handleOnToProjectsClick: MouseEventHandler<HTMLButtonElement> = () => {
     navigate('/projects');
     scrollToTop();
   };
 
-  const scrollToTop: Function = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
+
   return (
-    <PortfolioHomeContainer>
-      <BigHeading>Hi!</BigHeading>
-      <MediumHeading>My name is Martin Johnsson,</MediumHeading>
-      <MediumHeading>
-        I'm a Front End Developer based in Lund, Sweden
-      </MediumHeading>
-      <ThirdSizeHeading onClick={handleOnHeadingClick}>
-        Let's get in touch!
-      </ThirdSizeHeading>
-      <Box>
-        <MediumHeading>Or</MediumHeading>
-        <ToProjectsButton onClick={handleOnToProjectsClick}>
-          View my projects
-        </ToProjectsButton>
+    <Box as='section' w='100%'>
+      <Heading as='h1' fontSize='2.5rem' fontWeight='900'>
+        Martin Johnsson
+      </Heading>
+      <Box color={`${colorMode}.secondaryTextColor`}>
+        <Heading as='h2' fontSize='1.5rem'>
+          <StyledCraftingSpan>Crafting</StyledCraftingSpan> Web Applications.
+          <br /> Based in Lund, Sweden
+        </Heading>
       </Box>
-    </PortfolioHomeContainer>
+      <Box textAlign='center'>
+        <ViewProjectsButton onClick={handleOnToProjectsClick}>
+          View my projects
+        </ViewProjectsButton>
+      </Box>
+      <SocialLinks />
+    </Box>
   );
 };
 
