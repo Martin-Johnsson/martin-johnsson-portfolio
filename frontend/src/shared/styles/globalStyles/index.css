@@ -1,19 +1,24 @@
-* {
-  box-sizing: border-box;
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 3rem 0 2rem;
+  }
+  footer {
+    padding: 3rem 3rem 0 2rem;
+    width: 100%;
+  }
 }
 
-body {
-  overflow-x: hidden;
-}
+@media screen and (min-width: 769px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem 0 0;
+  }
 
-.center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-main {
-  max-width: 100%;
-  padding: 3rem 4rem 2rem 2rem;
-  min-height: 100vh;
+  footer {
+    width: 100%;
+    padding: 2rem 0rem 0 0;
+  }
 }
